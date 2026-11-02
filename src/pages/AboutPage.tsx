@@ -126,37 +126,125 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
         </div>
       </div>
 
-      {/* Services List (Section 7) */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-8 space-y-6">
+      {/* Official 10 Services Offered from Flyer */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-8 space-y-8">
         <div className="border-b border-stone-200 pb-3">
-          <span className="text-xs uppercase tracking-widest text-amber-800 font-semibold">
-            Services
-          </span>
+          <div className="inline-block px-3 py-1 rounded bg-[#166534] text-white text-xs font-bold uppercase tracking-wider mb-2">
+            Services Offered
+          </div>
           <h2 className="font-serif text-2xl sm:text-3xl font-bold text-stone-900 mt-1">
-            7. Our Tourism and Travel Services
+            7. Full Tourism and Travel Services
           </h2>
-          <p className="text-xs text-stone-600 mt-1">
-            Depending on destination, availability, and confirmed local arrangements, JAMAINUS SAFARIS provides or coordinates:
+          <p className="text-xs sm:text-sm text-stone-600 mt-1">
+            As authorized on our official operational charter, JAMAINUS SAFARIS provides or coordinates the following ten specialized safari and travel services:
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
-          {servicesList.map((service, idx) => (
+        {/* 10 Services from Flyer */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+          {COMPANY_DETAILS.servicesOffered.map((service, idx) => (
             <div
               key={idx}
-              className="p-3.5 rounded-lg bg-white border border-stone-200 shadow-xs flex items-center gap-2.5 text-xs text-stone-800"
+              className="p-4 rounded-xl bg-white border border-stone-200 shadow-xs hover:border-[#166534] transition-all space-y-2 flex flex-col justify-between"
             >
-              <CheckCircle2 className="w-4 h-4 text-amber-700 shrink-0" />
-              <span>{service}</span>
+              <div>
+                <div className="text-[10px] font-mono font-bold text-[#166534] uppercase tracking-wider mb-1">
+                  Service 0{idx + 1}
+                </div>
+                <h4 className="font-serif text-base font-bold text-stone-900">
+                  {service.title}
+                </h4>
+                <p className="text-xs text-stone-600 mt-1 leading-relaxed">
+                  {service.description}
+                </p>
+              </div>
+              <div className="pt-2 border-t border-stone-100 flex items-center text-[10px] font-semibold text-[#166534]">
+                <span>East Africa Ground Handling</span>
+              </div>
             </div>
           ))}
+        </div>
+
+        {/* Official Certifications & Regulators */}
+        <div className="bg-emerald-50/70 border border-emerald-200/80 rounded-xl p-6 space-y-4">
+          <div className="text-center sm:text-left">
+            <span className="text-xs font-bold uppercase tracking-wider text-[#166534]">
+              Regulatory & Association Recognition
+            </span>
+            <h3 className="font-serif text-xl font-bold text-stone-900 mt-0.5">
+              Fully Registered & Certified With
+            </h3>
+          </div>
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3">
+            {COMPANY_DETAILS.certifications.map((cert, idx) => (
+              <div
+                key={idx}
+                className="bg-white p-3 rounded-lg border border-emerald-200 text-center space-y-1 shadow-xs"
+              >
+                <span className="font-bold text-xs text-[#166534] block">{cert.acronym}</span>
+                <span className="text-[11px] text-stone-700 leading-tight block">{cert.name}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Ecotourism Statement */}
+        <div className="bg-[#166534] text-white p-6 sm:p-8 rounded-xl space-y-3 shadow-md">
+          <span className="text-xs font-bold uppercase tracking-wider text-emerald-300 block">
+            Ecotourism Philosophy
+          </span>
+          <blockquote className="text-base sm:text-lg italic font-serif leading-relaxed">
+            "{COMPANY_DETAILS.ecotourismStatement}"
+          </blockquote>
+          <p className="text-xs text-emerald-200">
+            — Official Jamainus Safaris Operational Declaration
+          </p>
+        </div>
+      </div>
+
+      {/* Official Field Flyer Showcase */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-8">
+        <div className="bg-stone-900 rounded-2xl border border-stone-800 p-6 sm:p-8 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center text-white">
+          <div className="lg:col-span-6 space-y-4">
+            <span className="text-xs font-bold uppercase tracking-wider text-emerald-400">
+              Official Marketing & Field Operations
+            </span>
+            <h2 className="font-serif text-3xl font-bold">
+              Explore The Adventure With Jamainus Safaris
+            </h2>
+            <p className="text-xs sm:text-sm text-stone-300 leading-relaxed">
+              Serving travellers across <strong>Uganda, Kenya, Tanzania, Zanzibar, Rwanda, Burundi, Egypt, DR Congo, and South Africa</strong>. Featuring licensed tourist drivers, top-tier safari vehicles, camping chiefs, tourist security, and airport drop & pick up.
+            </p>
+            <div className="pt-2 flex flex-wrap items-center gap-3">
+              <button
+                onClick={() => onNavigate('/custom-safari')}
+                className="px-6 py-2.5 bg-[#1d4ed8] hover:bg-[#1e40af] text-white text-xs font-bold uppercase tracking-wider rounded-full shadow-md cursor-pointer"
+              >
+                BOOK A TRIP
+              </button>
+              <button
+                onClick={() => onNavigate('/contact')}
+                className="px-5 py-2.5 bg-stone-800 hover:bg-stone-700 text-stone-200 text-xs font-semibold uppercase tracking-wider rounded-md cursor-pointer"
+              >
+                Contact Mbale Office
+              </button>
+            </div>
+          </div>
+          <div className="lg:col-span-6 flex justify-center">
+            <img
+              src={SAFARI_IMAGES.officialFlyer}
+              alt="Jamainus Safaris Official Field Flyer"
+              referrerPolicy="no-referrer"
+              className="rounded-xl border border-stone-700 shadow-2xl max-h-72 object-contain"
+            />
+          </div>
         </div>
       </div>
 
       {/* Responsible & Inclusive Tourism Charter (Section 8) */}
       <div className="max-w-7xl mx-auto px-4 sm:px-8 space-y-8">
         <div className="border-b border-stone-200 pb-3">
-          <span className="text-xs uppercase tracking-widest text-amber-800 font-semibold">
+          <span className="text-xs uppercase tracking-widest text-[#166534] font-bold">
             Guiding Principles
           </span>
           <h2 className="font-serif text-2xl sm:text-3xl font-bold text-stone-900 mt-1">
@@ -174,10 +262,10 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
               className="p-6 rounded-xl bg-white border border-stone-200 shadow-xs space-y-2.5"
             >
               <div className="flex items-center justify-between">
-                <span className="text-xs font-mono font-bold text-amber-700">
+                <span className="text-xs font-mono font-bold text-[#166534]">
                   Principle 0{idx + 1}
                 </span>
-                <ShieldCheck className="w-4 h-4 text-amber-800" />
+                <ShieldCheck className="w-4 h-4 text-[#166534]" />
               </div>
               <h3 className="font-serif text-lg font-bold text-stone-900">
                 {principle.title}
@@ -193,7 +281,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
       {/* Target Audiences (Section 10) */}
       <div className="max-w-7xl mx-auto px-4 sm:px-8 space-y-6">
         <div className="border-b border-stone-200 pb-3">
-          <span className="text-xs uppercase tracking-widest text-amber-800 font-semibold">
+          <span className="text-xs uppercase tracking-widest text-[#166534] font-bold">
             Traveller Profiles
           </span>
           <h2 className="font-serif text-2xl sm:text-3xl font-bold text-stone-900 mt-1">
@@ -207,7 +295,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
               key={idx}
               className="p-3.5 rounded-lg bg-stone-50 border border-stone-200 flex items-start gap-2.5 text-xs text-stone-700"
             >
-              <span className="text-amber-800 font-bold shrink-0">·</span>
+              <span className="text-[#166534] font-bold shrink-0">·</span>
               <span className="leading-relaxed">{aud}</span>
             </div>
           ))}
@@ -218,7 +306,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
       <div className="max-w-7xl mx-auto px-4 sm:px-8">
         <div className="bg-[#1C1917] rounded-2xl text-white p-8 sm:p-10 border border-stone-800 space-y-6">
           <div className="space-y-3 max-w-3xl">
-            <span className="text-xs uppercase tracking-widest text-amber-400 font-medium">
+            <span className="text-xs uppercase tracking-widest text-emerald-400 font-medium">
               Section 12
             </span>
             <h2 className="font-serif text-2xl sm:text-3xl font-bold text-white">
@@ -240,7 +328,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
               href={COMPANY_DETAILS.officialPdfPath}
               target="_blank"
               rel="noopener noreferrer"
-              className="px-5 py-2.5 bg-amber-800 hover:bg-amber-900 text-white text-xs font-semibold uppercase tracking-wider rounded-md flex items-center gap-2 transition-colors"
+              className="px-5 py-2.5 bg-[#166534] hover:bg-[#14532d] text-white text-xs font-semibold uppercase tracking-wider rounded-md flex items-center gap-2 transition-colors cursor-pointer"
             >
               <Download className="w-4 h-4" />
               <span>Download Company Profile (PDF)</span>

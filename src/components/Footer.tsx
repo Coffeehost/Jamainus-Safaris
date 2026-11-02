@@ -1,5 +1,5 @@
 import React from 'react';
-import { Mail, Phone, MapPin, Download, Heart, ArrowUpRight, Compass, ShieldCheck } from 'lucide-react';
+import { Mail, Phone, MapPin, Download, Heart, ArrowUpRight, Compass, ShieldCheck, Award } from 'lucide-react';
 import { COMPANY_DETAILS, TOURISM_PILLARS } from '../data/companyData';
 
 interface FooterProps {
@@ -8,41 +8,55 @@ interface FooterProps {
 
 export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
   return (
-    <footer className="bg-[#1C1917] text-[#FAF8F5] pt-16 pb-12 border-t border-stone-800">
+    <footer className="bg-[#0f172a]/95 text-[#FAF8F5] pt-16 pb-12 border-t border-stone-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-stone-800">
-          {/* Col 1 & 2: Brand & Foundation */}
-          <div className="lg:col-span-2 space-y-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-12 border-b border-stone-800">
+          {/* Col 1: Brand & Foundation (5 cols) */}
+          <div className="lg:col-span-4 space-y-4">
             <div className="flex items-center gap-2.5">
-              <div className="w-10 h-10 rounded-lg bg-amber-700 text-amber-50 flex items-center justify-center font-serif font-bold text-xl">
-                <Compass className="w-5 h-5" />
+              <div className="w-10 h-10 rounded-lg bg-[#166534] text-white flex items-center justify-center font-serif font-bold text-xl shadow-sm">
+                <Compass className="w-5 h-5 text-emerald-300" />
               </div>
               <div>
                 <span className="font-serif text-2xl font-bold tracking-tight text-white block">
                   JAMAINUS SAFARIS
                 </span>
-                <span className="text-xs uppercase tracking-widest text-amber-400 font-medium">
-                  Discover the Soul of Africa
+                <span className="text-xs uppercase tracking-widest text-emerald-400 font-semibold">
+                  Explore The Adventure
                 </span>
               </div>
             </div>
 
-            <p className="text-sm text-stone-300 leading-relaxed pr-4">
-              Tourism and travel brand based in Mbale, Eastern Uganda, connecting travellers to the diverse cultures, natural landscapes, wildlife, spiritual traditions, agricultural heritage, and living histories of Africa.
+            <p className="text-xs sm:text-sm text-stone-300 leading-relaxed pr-2">
+              Licensed East African tour operator headquartered in Mbale, Eastern Uganda at the foot of Mount Elgon. Connecting travellers to Uganda, Rwanda, Kenya, Tanzania, and Zanzibar.
             </p>
 
+            {/* Certifications Row */}
+            <div className="pt-1">
+              <span className="text-[10px] font-bold uppercase tracking-wider text-stone-400 block mb-1.5">
+                Certified & Registered With:
+              </span>
+              <div className="flex flex-wrap gap-1.5 text-[10px] text-stone-300">
+                {COMPANY_DETAILS.certifications.map((c, i) => (
+                  <span key={i} className="px-2 py-0.5 rounded bg-stone-800/90 border border-stone-700 font-mono">
+                    {c.acronym}
+                  </span>
+                ))}
+              </div>
+            </div>
+
             {/* Charity Arm Badge */}
-            <div className="p-3.5 rounded-lg bg-stone-900 border border-stone-800 space-y-2">
-              <div className="flex items-center gap-2 text-xs font-semibold text-amber-400">
+            <div className="p-3.5 rounded-lg bg-stone-900/90 border border-stone-800 space-y-2">
+              <div className="flex items-center gap-2 text-xs font-semibold text-emerald-400">
                 <Heart className="w-4 h-4 text-rose-400 shrink-0" />
                 <span>JAMAINUS CHARITY FOUNDATION LTD</span>
               </div>
               <p className="text-xs text-stone-400 leading-normal">
-                Slogan: <em>A Chance to Make a Difference</em>. Supporting disability inclusion, vulnerable communities, education, and ecotourism conservation.
+                Slogan: <em>A Chance to Make a Difference</em>. Focusing on disability inclusion, community welfare, and habitat conservation.
               </p>
               <button
                 onClick={() => onNavigate('/charity')}
-                className="text-xs font-medium text-amber-400 hover:text-amber-300 flex items-center gap-1 transition-colors"
+                className="text-xs font-medium text-emerald-400 hover:text-emerald-300 flex items-center gap-1 transition-colors cursor-pointer"
               >
                 <span>Learn about our charity mission</span>
                 <ArrowUpRight className="w-3.5 h-3.5" />
@@ -50,63 +64,64 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
             </div>
           </div>
 
-          {/* Col 3: Four Pillars */}
-          <div className="space-y-3">
-            <h4 className="text-xs font-bold uppercase tracking-wider text-amber-500">
-              Our 4 Pillars
+          {/* Col 2: Services Offered from Flyer (3 cols) */}
+          <div className="lg:col-span-3 space-y-3">
+            <h4 className="text-xs font-bold uppercase tracking-wider text-emerald-400">
+              Services Offered
             </h4>
-            <ul className="space-y-2 text-sm text-stone-300">
-              {TOURISM_PILLARS.map((p) => (
-                <li key={p.id}>
-                  <button
-                    onClick={() => onNavigate('/pillars')}
-                    className="hover:text-amber-400 transition-colors text-left"
-                  >
-                    {p.title}
-                  </button>
+            <ul className="space-y-1.5 text-xs text-stone-300">
+              {COMPANY_DETAILS.servicesOffered.map((s, idx) => (
+                <li key={idx} className="flex items-center gap-1.5">
+                  <span className="text-emerald-500 font-bold">·</span>
+                  <span>{s.title}</span>
                 </li>
               ))}
               <li className="pt-2">
                 <button
-                  onClick={() => onNavigate('/itineraries')}
-                  className="text-xs text-amber-400 hover:text-amber-300 font-medium flex items-center gap-1"
+                  onClick={() => onNavigate('/custom-safari')}
+                  className="px-3.5 py-1.5 bg-[#1d4ed8] hover:bg-[#1e40af] text-white text-xs font-bold uppercase tracking-wider rounded-full flex items-center gap-1 shadow-sm cursor-pointer"
                 >
-                  <span>View All 10+ Itineraries</span>
+                  <span>BOOK A TRIP</span>
                   <ArrowUpRight className="w-3.5 h-3.5" />
                 </button>
               </li>
             </ul>
           </div>
 
-          {/* Col 4: Quick Navigation */}
-          <div className="space-y-3">
-            <h4 className="text-xs font-bold uppercase tracking-wider text-amber-500">
-              Explore
+          {/* Col 3: Destinations & Pillars (2 cols) */}
+          <div className="lg:col-span-2 space-y-3">
+            <h4 className="text-xs font-bold uppercase tracking-wider text-emerald-400">
+              Safaris & Circuits
             </h4>
-            <ul className="space-y-2 text-sm text-stone-300">
+            <ul className="space-y-2 text-xs text-stone-300">
               <li>
-                <button onClick={() => onNavigate('/')} className="hover:text-white transition-colors">
-                  Home
+                <button onClick={() => onNavigate('/itineraries')} className="hover:text-emerald-300 transition-colors text-left cursor-pointer">
+                  Uganda Mountain Gorillas
                 </button>
               </li>
               <li>
-                <button onClick={() => onNavigate('/about')} className="hover:text-white transition-colors">
-                  Who We Are & Mission
+                <button onClick={() => onNavigate('/itineraries')} className="hover:text-emerald-300 transition-colors text-left cursor-pointer">
+                  Rwanda Primate Safaris
                 </button>
               </li>
               <li>
-                <button onClick={() => onNavigate('/destinations')} className="hover:text-white transition-colors">
-                  Geographic Scope & Circuits
+                <button onClick={() => onNavigate('/itineraries')} className="hover:text-emerald-300 transition-colors text-left cursor-pointer">
+                  Kenya Maasai Mara & Amboseli
                 </button>
               </li>
               <li>
-                <button onClick={() => onNavigate('/custom-safari')} className="hover:text-white transition-colors">
-                  Custom Safari Planner
+                <button onClick={() => onNavigate('/itineraries')} className="hover:text-emerald-300 transition-colors text-left cursor-pointer">
+                  Tanzania Serengeti & Zanzibar
                 </button>
               </li>
               <li>
-                <button onClick={() => onNavigate('/contact')} className="hover:text-white transition-colors">
-                  Contact & Inquiries
+                <button onClick={() => onNavigate('/pillars')} className="hover:text-emerald-300 transition-colors text-left cursor-pointer">
+                  4 Tourism Pillars
+                </button>
+              </li>
+              <li>
+                <button onClick={() => onNavigate('/destinations')} className="hover:text-emerald-300 transition-colors text-left cursor-pointer">
+                  All 9 African Countries
                 </button>
               </li>
               <li className="pt-2">
@@ -114,35 +129,35 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                   href={COMPANY_DETAILS.officialPdfPath}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1.5 text-xs text-stone-300 hover:text-amber-400 transition-colors p-1.5 rounded bg-stone-900 border border-stone-800"
+                  className="inline-flex items-center gap-1 text-[11px] text-emerald-300 hover:text-emerald-200 transition-colors"
                 >
-                  <Download className="w-3.5 h-3.5 text-amber-500" />
-                  <span>Download Company Profile (PDF)</span>
+                  <Download className="w-3 h-3 text-emerald-400" />
+                  <span>Company Profile PDF</span>
                 </a>
               </li>
             </ul>
           </div>
 
-          {/* Col 5: Head Office & Contact */}
-          <div className="space-y-3">
-            <h4 className="text-xs font-bold uppercase tracking-wider text-amber-500">
+          {/* Col 4: Head Office & Contact (3 cols) */}
+          <div className="lg:col-span-3 space-y-3">
+            <h4 className="text-xs font-bold uppercase tracking-wider text-emerald-400">
               Head Office (Mbale)
             </h4>
-            <div className="space-y-2 text-sm text-stone-300">
+            <div className="space-y-2.5 text-xs text-stone-300">
               <div className="flex items-start gap-2">
-                <MapPin className="w-4 h-4 text-amber-500 shrink-0 mt-0.5" />
+                <MapPin className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
                 <span>
                   {COMPANY_DETAILS.headOffice}
                   <br />
-                  <span className="text-xs text-stone-400">{COMPANY_DETAILS.postalAddress}</span>
+                  <span className="text-stone-400">{COMPANY_DETAILS.postalAddress}</span>
                 </span>
               </div>
 
               <div className="space-y-1 pt-1">
-                <div className="text-xs font-mono text-stone-400">Phone & WhatsApp:</div>
+                <div className="text-[11px] font-mono text-stone-400">Phone & WhatsApp Hotline:</div>
                 {COMPANY_DETAILS.telephones.map((tel, idx) => (
                   <div key={idx} className="flex items-center gap-2">
-                    <Phone className="w-3.5 h-3.5 text-amber-500 shrink-0" />
+                    <Phone className="w-3.5 h-3.5 text-emerald-400 shrink-0" />
                     <a
                       href={`tel:${tel.raw}`}
                       className="hover:text-white transition-colors font-mono tabular-nums text-xs"
@@ -154,13 +169,13 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
               </div>
 
               <div className="space-y-1 pt-1">
-                <div className="text-xs font-mono text-stone-400">Official Emails:</div>
+                <div className="text-[11px] font-mono text-stone-400">Official Emails:</div>
                 {COMPANY_DETAILS.emails.map((email, idx) => (
                   <div key={idx} className="flex items-center gap-2">
-                    <Mail className="w-3.5 h-3.5 text-amber-500 shrink-0" />
+                    <Mail className="w-3.5 h-3.5 text-emerald-400 shrink-0" />
                     <a
                       href={`mailto:${email}`}
-                      className="hover:text-white transition-colors text-xs truncate max-w-[190px]"
+                      className="hover:text-white transition-colors text-xs truncate max-w-[200px]"
                     >
                       {email}
                     </a>
@@ -174,12 +189,12 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
         {/* Bottom Bar */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-stone-400">
           <div className="flex items-center gap-2">
-            <ShieldCheck className="w-4 h-4 text-amber-600" />
+            <ShieldCheck className="w-4 h-4 text-emerald-500" />
             <span>
               &copy; {new Date().getFullYear()} Jamainus Safaris & Jamainus Charity Foundation Ltd. All rights reserved.
             </span>
           </div>
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-3 text-emerald-400 font-medium">
             <span>Explore the Adventure</span>
             <span>·</span>
             <span>Experience the Culture</span>

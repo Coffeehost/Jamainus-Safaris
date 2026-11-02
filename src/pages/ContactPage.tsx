@@ -269,10 +269,10 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate }) => {
                     </span>
                     <button
                       type="submit"
-                      className="px-6 py-2.5 bg-amber-800 hover:bg-amber-900 text-white text-xs font-semibold uppercase tracking-wider rounded-md shadow-xs transition-colors flex items-center gap-2 cursor-pointer"
+                      className="px-6 py-2.5 bg-[#1d4ed8] hover:bg-[#1e40af] text-white text-xs font-bold uppercase tracking-wider rounded-full shadow-md transition-all flex items-center gap-2 cursor-pointer"
                     >
                       <Send className="w-3.5 h-3.5" />
-                      <span>Send Message</span>
+                      <span>Send Message / Book A Trip</span>
                     </button>
                   </div>
                 </form>

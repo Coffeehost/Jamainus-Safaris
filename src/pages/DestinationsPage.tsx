@@ -55,15 +55,22 @@ export const DestinationsPage: React.FC<DestinationsPageProps> = ({ onNavigate, 
     },
     {
       id: 'regional',
-      title: 'Trans-Border East Africa Circuit',
+      title: 'Trans-Border East Africa Circuit (Rwanda, Kenya, Tanzania & Zanzibar)',
       tagline: 'Uganda, Rwanda, Kenya and Tanzania Seamless Connections',
       highlights: [
-        'Kigali & Volcanoes National Park (Rwanda) – Clean urban rebirth & golden monkeys',
-        'Maasai Mara & Great Rift Valley (Kenya) – Endless savannahs & wildebeest spectacle',
-        'Serengeti & Ngorongoro Caldera (Tanzania) – The cradle of mankind and predator kingdoms',
-        'Zanzibar Swahili coastal spice heritage and Arabic-Bantu historical architecture'
+        'Rwanda: Volcanoes National Park mountain gorillas & golden monkeys',
+        'Kenya: Maasai Mara Big Cats, wildebeest migration & Amboseli Kilimanjaro herds',
+        'Tanzania: Serengeti endless plains & Ngorongoro Caldera Big 5 descent',
+        'Zanzibar: Stone Town UNESCO spice heritage and turquoise Swahili beaches',
+        'Burundi & DR Congo: Trans-boundary rift lakes and Virunga extensions'
       ],
-      tours: ['east-african-discovery-trail']
+      tours: [
+        'rwanda-gorillas-golden-monkeys-5day', 
+        'kenya-maasai-mara-amboseli-6day', 
+        'tanzania-serengeti-ngorongoro-7day', 
+        'tanzania-serengeti-zanzibar-9day', 
+        'east-african-discovery-trail'
+      ]
     }
   ];
 
@@ -107,11 +114,11 @@ export const DestinationsPage: React.FC<DestinationsPageProps> = ({ onNavigate, 
               onClick={() => setSelectedCircuit(circ.id as any)}
               className={`p-4 rounded-xl text-left transition-all cursor-pointer border ${
                 selectedCircuit === circ.id
-                  ? 'bg-amber-800 text-white border-amber-800 shadow-xs'
+                  ? 'bg-[#166534] text-white border-[#166534] shadow-xs'
                   : 'bg-white text-stone-800 border-stone-200 hover:bg-stone-50'
               }`}
             >
-              <span className={`text-[11px] block uppercase font-mono ${selectedCircuit === circ.id ? 'text-amber-200' : 'text-stone-400'}`}>
+              <span className={`text-[11px] block uppercase font-mono ${selectedCircuit === circ.id ? 'text-emerald-200' : 'text-stone-400'}`}>
                 {circ.id === 'east' ? 'Headquarters Region' : 'Circuit'}
               </span>
               <span className="font-serif font-bold text-sm sm:text-base block mt-0.5">

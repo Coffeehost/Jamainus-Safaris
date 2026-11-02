@@ -274,10 +274,10 @@ export const InquiryModal: React.FC<InquiryModalProps> = ({
                 </span>
                 <button
                   type="submit"
-                  className="px-5 py-2.5 bg-amber-800 hover:bg-amber-900 active:scale-95 text-white text-xs font-semibold uppercase tracking-wider rounded-md shadow-xs flex items-center gap-2 transition-all cursor-pointer"
+                  className="px-6 py-2.5 bg-[#1d4ed8] hover:bg-[#1e40af] active:scale-95 text-white text-xs font-bold uppercase tracking-wider rounded-full shadow-md flex items-center gap-2 transition-all cursor-pointer"
                 >
                   <Send className="w-3.5 h-3.5" />
-                  <span>Submit Safari Inquiry</span>
+                  <span>BOOK A TRIP / SUBMIT INQUIRY</span>
                 </button>
               </div>
             </form>

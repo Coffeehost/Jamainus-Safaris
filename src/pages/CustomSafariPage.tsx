@@ -37,7 +37,9 @@ export const CustomSafariPage: React.FC<CustomSafariPageProps> = ({ onNavigate }
     'Jinja Source of the River Nile & Adventure',
     'Rwanda (Kigali & Volcanoes National Park)',
     'Kenya (Maasai Mara & Great Rift Valley)',
-    'Tanzania (Serengeti & Ngorongoro Crater)'
+    'Tanzania (Serengeti & Ngorongoro Crater)',
+    'Zanzibar (Stone Town & Spice Coast Beaches)',
+    'Burundi & DR Congo Trans-boundary Circuits'
   ];
 
   const handleTogglePillar = (id: TourismPillarId) => {
@@ -446,10 +448,10 @@ Please propose an itinerary and quotation.`;
                 </div>
                 <button
                   type="submit"
-                  className="w-full sm:w-auto px-8 py-3 bg-amber-800 hover:bg-amber-900 text-white text-xs font-semibold uppercase tracking-wider rounded-md shadow-md transition-all cursor-pointer flex items-center justify-center gap-2"
+                  className="w-full sm:w-auto px-8 py-3 bg-[#1d4ed8] hover:bg-[#1e40af] text-white text-xs font-bold uppercase tracking-wider rounded-full shadow-md transition-all cursor-pointer flex items-center justify-center gap-2"
                 >
                   <Send className="w-4 h-4" />
-                  <span>Generate Safari Proposal</span>
+                  <span>BOOK A TRIP / REQUEST PROPOSAL</span>
                 </button>
               </div>
             </div>

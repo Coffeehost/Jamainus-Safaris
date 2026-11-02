@@ -57,7 +57,7 @@ export const Header: React.FC<HeaderProps> = ({ currentPath, onNavigate }) => {
             </a>
             <span className="text-stone-700 hidden sm:inline">|</span>
             <a
-              href={`https://wa.me/256779448916?text=${encodeURIComponent("Hello Jamainus Safaris, I would like to inquire about a safari itinerary.")}`}
+              href={`https://wa.me/256701817599?text=${encodeURIComponent("Hello Jamainus Safaris, I would like to inquire about a safari itinerary.")}`}
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-1 text-emerald-400 hover:text-emerald-300 transition-colors"
@@ -77,15 +77,15 @@ export const Header: React.FC<HeaderProps> = ({ currentPath, onNavigate }) => {
           className="text-left group cursor-pointer focus:outline-none shrink-0"
         >
           <div className="flex items-center gap-2.5">
-            <div className="w-9 h-9 rounded-lg bg-amber-700 text-amber-50 flex items-center justify-center font-serif font-bold text-lg shadow-xs">
-              <Compass className="w-5 h-5" />
+            <div className="w-10 h-10 rounded-lg bg-[#166534] text-white flex items-center justify-center font-serif font-bold text-lg shadow-sm">
+              <Compass className="w-5 h-5 text-emerald-200" />
             </div>
             <div>
-              <span className="font-serif text-xl sm:text-2xl font-bold tracking-tight text-stone-900 group-hover:text-amber-800 transition-colors block leading-tight">
+              <span className="font-serif text-xl sm:text-2xl font-bold tracking-tight text-stone-900 group-hover:text-[#166534] transition-colors block leading-tight">
                 JAMAINUS SAFARIS
               </span>
-              <span className="text-[10px] uppercase tracking-wider text-stone-500 font-medium block">
-                Discover the Soul of Africa
+              <span className="text-[10px] uppercase tracking-wider text-[#166534] font-semibold block">
+                Explore The Adventure · Discover Africa
               </span>
             </div>
           </div>
@@ -104,8 +104,8 @@ export const Header: React.FC<HeaderProps> = ({ currentPath, onNavigate }) => {
                 onClick={() => handleLinkClick(btn.path)}
                 className={`px-3 py-1.5 rounded-md text-xs font-medium whitespace-nowrap transition-all cursor-pointer ${
                   isActive
-                    ? 'bg-amber-800 text-white shadow-xs font-semibold'
-                    : 'bg-stone-100/80 hover:bg-stone-200/80 text-stone-700 hover:text-stone-900 border border-stone-200/60'
+                    ? 'bg-[#166534] text-white shadow-xs font-semibold'
+                    : 'bg-stone-100/90 hover:bg-stone-200/90 text-stone-700 hover:text-stone-900 border border-stone-200/70'
                 }`}
               >
                 {btn.label}
@@ -114,13 +114,14 @@ export const Header: React.FC<HeaderProps> = ({ currentPath, onNavigate }) => {
           })}
         </nav>
 
-        {/* Primary Action Button */}
+        {/* Primary Action Button - Styled after the flyer's prominent blue "BOOK A TRIP" badge */}
         <div className="hidden sm:flex items-center gap-2 shrink-0">
           <button
             onClick={() => handleLinkClick('/custom-safari')}
-            className="px-4 py-2 text-xs font-semibold uppercase tracking-wider text-white bg-amber-800 hover:bg-amber-900 active:scale-95 transition-all rounded-md shadow-xs whitespace-nowrap shrink-0 cursor-pointer"
+            className="px-4 py-2 text-xs font-bold uppercase tracking-wider text-white bg-[#1d4ed8] hover:bg-[#1e40af] active:scale-95 transition-all rounded-full shadow-md whitespace-nowrap shrink-0 cursor-pointer flex items-center gap-1.5"
           >
-            Plan Custom Safari
+            <span className="w-2 h-2 rounded-full bg-blue-200 animate-pulse" />
+            <span>BOOK A TRIP</span>
           </button>
         </div>
 
@@ -128,9 +129,9 @@ export const Header: React.FC<HeaderProps> = ({ currentPath, onNavigate }) => {
         <div className="flex items-center gap-2 xl:hidden">
           <button
             onClick={() => handleLinkClick('/custom-safari')}
-            className="sm:hidden px-3 py-1.5 text-[11px] font-semibold uppercase tracking-wider text-white bg-amber-800 rounded-md"
+            className="sm:hidden px-3 py-1.5 text-[11px] font-bold uppercase tracking-wider text-white bg-[#1d4ed8] rounded-full"
           >
-            Plan
+            BOOK A TRIP
           </button>
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -155,7 +156,7 @@ export const Header: React.FC<HeaderProps> = ({ currentPath, onNavigate }) => {
               onClick={() => handleLinkClick(btn.path)}
               className={`px-3 py-1.5 rounded-md text-xs font-medium whitespace-nowrap transition-all cursor-pointer ${
                 isActive
-                  ? 'bg-amber-800 text-white shadow-xs font-semibold'
+                  ? 'bg-[#166534] text-white shadow-xs font-semibold'
                   : 'bg-white hover:bg-stone-200 text-stone-700 border border-stone-200'
               }`}
             >
@@ -184,7 +185,7 @@ export const Header: React.FC<HeaderProps> = ({ currentPath, onNavigate }) => {
                     onClick={() => handleLinkClick(btn.path)}
                     className={`text-left px-3.5 py-2.5 rounded-lg text-sm font-medium transition-all ${
                       isActive
-                        ? 'bg-amber-800 text-white font-semibold'
+                        ? 'bg-[#166534] text-white font-semibold'
                         : 'bg-stone-100 hover:bg-stone-200 text-stone-800'
                     }`}
                   >
@@ -196,9 +197,9 @@ export const Header: React.FC<HeaderProps> = ({ currentPath, onNavigate }) => {
             <div className="pt-3 mt-2 border-t border-stone-200 flex flex-col gap-2.5">
               <button
                 onClick={() => handleLinkClick('/custom-safari')}
-                className="w-full py-2.5 text-center text-sm font-semibold uppercase tracking-wider text-white bg-amber-800 rounded-md shadow-xs"
+                className="w-full py-2.5 text-center text-sm font-bold uppercase tracking-wider text-white bg-[#1d4ed8] hover:bg-[#1e40af] rounded-full shadow-md"
               >
-                Plan Custom Safari
+                BOOK A TRIP / Plan Safari
               </button>
               <div className="pt-2 text-xs text-stone-500 space-y-1">
                 <p>Mbale, Eastern Uganda · P.O. Box 530</p>

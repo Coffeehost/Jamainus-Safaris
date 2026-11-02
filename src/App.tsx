@@ -14,6 +14,8 @@ import { CustomSafariPage } from './pages/CustomSafariPage';
 import { ContactPage } from './pages/ContactPage';
 import { Itinerary } from './types';
 
+import { FloatingWhatsApp } from './components/FloatingWhatsApp';
+
 export default function App() {
   const { currentPath, navigate } = useRouter();
   const [isInquiryOpen, setIsInquiryOpen] = useState(false);
@@ -165,6 +167,9 @@ export default function App() {
 
       {/* Footer */}
       <Footer onNavigate={navigate} />
+
+      {/* Floating WhatsApp Action Button */}
+      <FloatingWhatsApp phoneNumber="256701817599" />
 
       {/* Global Safari Booking & Inquiry Modal */}
       <InquiryModal

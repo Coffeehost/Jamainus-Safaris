@@ -1413,7 +1413,524 @@ export const ALL_ITINERARIES: Itinerary[] = [
       'Sun hat, sunglasses, and high SPF sunscreen',
       'Binoculars and extra camera batteries'
     ]
+  },
+
+  // 11. Dedicated Rwanda Itinerary: 5-Day Rwanda Gorillas, Golden Monkeys & Lake Kivu
+  {
+    id: 'rwanda-gorillas-golden-monkeys-5day',
+    title: '5-Day Rwanda Gorillas, Golden Monkeys & Lake Kivu',
+    tagline: 'Misty Virunga volcanoes, endangered primate tracking & peaceful Lake Kivu relaxation',
+    pillar: 'wildlife',
+    pillarLabel: 'Rwanda Primate Safari',
+    durationDays: 5,
+    durationNights: 4,
+    startLocation: 'Kigali International Airport (KGL)',
+    endLocation: 'Kigali International Airport (KGL)',
+    countries: ['Rwanda'],
+    difficulty: 'Active',
+    groupSize: '1 to 8 travelers',
+    idealFor: 'Primate enthusiasts, luxury seekers, photographers, couples',
+    featured: true,
+    overview: 'Experience the land of a thousand hills. From the spotless streets of Kigali to the dramatic slopes of Volcanoes National Park, track habituated mountain gorilla families and rare golden monkeys, followed by cultural immersion at Iby’Iwacu Cultural Village and sunset canoeing on Lake Kivu.',
+    keyHighlights: [
+      'Official Rwanda Development Board (RDB) Mountain Gorilla tracking permit',
+      'Endangered Golden Monkey tracking through high-altitude bamboo forests',
+      'Kigali Genocide Memorial and contemporary arts & craft market tour',
+      'Iby’Iwacu Cultural Village (Gorilla Guardians) traditional royal drumming and dance',
+      'Scenic drive around the emerald shores of Lake Kivu in Gisenyi/Rubavu'
+    ],
+    dayByDay: [
+      {
+        dayNumber: 1,
+        title: 'Arrival in Kigali – Modern Rebirth & Genocide Memorial',
+        destination: 'Kigali, Rwanda',
+        description: 'Arrive at Kigali International Airport. Meet your Jamainus Safaris Rwanda guide for a tour of Kigali, one of the cleanest and safest capitals in the world, including the Kigali Genocide Memorial.',
+        morning: 'VIP airport reception; city drive through Kigali’s pristine hillside boulevards.',
+        afternoon: 'Guided visit to the Kigali Genocide Memorial; visit to Inema Arts Center.',
+        evening: 'Welcome dinner featuring brochettes and Rwandan highland fusion cuisine.',
+        mealsIncluded: 'Dinner',
+        accommodationType: 'Hotel des Mille Collines / Heaven Restaurant & Boutique Hotel, Kigali',
+        highlights: ['Kigali city orientation', 'Genocide Memorial reflection', 'Inema Arts gallery']
+      },
+      {
+        dayNumber: 2,
+        title: 'Kigali to Volcanoes National Park – Foothills of the Virungas',
+        destination: 'Musanze / Kinigi',
+        description: 'Drive northwest through emerald terraced hillsides toward the dramatic chain of dormant Virunga volcanoes towering over 4,000 meters.',
+        morning: 'Visit the Kimironko Artisan Market for vibrant textiles and handwoven baskets.',
+        afternoon: 'Scenic drive to Musanze at the base of Mount Karisimbi and Mount Bisoke.',
+        evening: 'Lodge check-in; briefing on gorilla trekking protocols beside warm stone fireplaces.',
+        mealsIncluded: 'Breakfast, Lunch, Dinner',
+        accommodationType: 'Five Volcanoes Boutique Hotel / Mountain Gorilla View Lodge',
+        highlights: ['Terraced volcanic hillsides', 'Kimironko market colors', 'Virunga mountain views']
+      },
+      {
+        dayNumber: 3,
+        title: 'The Mountain Gorilla Trek in Volcanoes National Park',
+        destination: 'Volcanoes National Park',
+        description: 'The pinnacle experience. Enter the lush montane forest guided by expert RDB trackers to spend one magical hour with a habituated gorilla family.',
+        morning: 'Transfer to Kinigi headquarters for briefing with hot Rwandan coffee; trek into bamboo canopy.',
+        afternoon: 'One unforgettable hour in the presence of silverbacks, playful juveniles, and mothers.',
+        evening: 'Visit the Gorilla Guardians Cultural Village (Iby’Iwacu) for traditional Intore warrior dancing.',
+        mealsIncluded: 'Breakfast, Lunch, Dinner',
+        accommodationType: 'Five Volcanoes Boutique Hotel',
+        highlights: ['Volcanoes gorilla tracking', 'Silverback family encounter', 'Intore traditional royal dance']
+      },
+      {
+        dayNumber: 4,
+        title: 'Golden Monkey Trekking & Scenic Transfer to Lake Kivu',
+        destination: 'Lake Kivu (Gisenyi / Rubavu)',
+        description: 'Track the endangered and energetic Golden Monkeys leaping through the bamboo forest, then unwind along the white sandy shores of Lake Kivu.',
+        morning: 'Morning trek to spot golden monkeys playing in bamboo groves.',
+        afternoon: 'Scenic descent to Lake Kivu; check-in at lakefront resort.',
+        evening: 'Sunset boat cruise visiting hot springs and watching traditional singing fishermen.',
+        mealsIncluded: 'Breakfast, Lunch, Dinner',
+        accommodationType: 'Lake Kivu Serena Hotel / Paradise Kivu Resort',
+        highlights: ['Golden monkey tracking', 'Lake Kivu sunset boat ride', 'Singing night fishermen']
+      },
+      {
+        dayNumber: 5,
+        title: 'Lake Kivu Coffee Island Tour & Return to Kigali for Departure',
+        destination: 'Kigali International Airport',
+        description: 'Tour a cooperative coffee washing station on Lake Kivu before the scenic drive back to Kigali for your outbound international flight.',
+        morning: 'Taste single-origin Bourbon coffee grown on volcanic lakeshore slopes.',
+        afternoon: 'Scenic return drive to Kigali; last-minute souvenir shopping at Caplaki craft village.',
+        evening: 'Transfer to Kigali International Airport (KGL) for departure.',
+        mealsIncluded: 'Breakfast, Lunch',
+        accommodationType: 'Departure day',
+        highlights: ['Lake Kivu coffee cooperative', 'Caplaki craft village', 'Airport transfer']
+      }
+    ],
+    included: [
+      'Official RDB Mountain Gorilla Tracking Permit included',
+      'Official Golden Monkey Tracking Permit included',
+      'Custom 4x4 safari cruiser with professional English/French speaking guide',
+      '4 nights luxury/mid-range lodge accommodation on full board',
+      'Lake Kivu private boat cruise and hot springs visit',
+      'Iby’Iwacu Cultural Village entrance and community donations',
+      'All airport transfers and ground transport in Rwanda'
+    ],
+    excluded: [
+      'International flights and Rwanda entry visa',
+      'Gratuities for tracker guides and lodge staff',
+      'Personal travel insurance'
+    ],
+    packingAdvice: [
+      'Light waterproof hiking boots with gaiters',
+      'Garden gloves for grabbing bamboo vegetation on steep slopes',
+      'Camera with good low-light performance (no camera flash allowed near gorillas)'
+    ]
+  },
+
+  // 12. Dedicated Kenya Itinerary: 6-Day Classic Kenya: Maasai Mara & Amboseli Safari
+  {
+    id: 'kenya-maasai-mara-amboseli-6day',
+    title: '6-Day Classic Kenya: Maasai Mara & Amboseli Kilimanjaro Safari',
+    tagline: 'Big Cats of the Mara, elephant herds under Mount Kilimanjaro & Great Rift Valley',
+    pillar: 'wildlife',
+    pillarLabel: 'Kenya Classic Safari',
+    durationDays: 6,
+    durationNights: 5,
+    startLocation: 'Nairobi (NBO), Kenya',
+    endLocation: 'Nairobi (NBO), Kenya',
+    countries: ['Kenya'],
+    difficulty: 'Easy',
+    groupSize: '2 to 8 travelers',
+    idealFor: 'Big 5 wildlife enthusiasts, photographers, families, first-time safari travelers',
+    featured: true,
+    overview: 'The quintessence of African safari dreams. Journey from Nairobi to Amboseli National Park, where colossal herds of free-ranging elephants roam before the breathtaking snow-capped crown of Mount Kilimanjaro, then fly or drive to the world-renowned Maasai Mara for unmatched big cat action.',
+    keyHighlights: [
+      'Iconic photographs of massive elephant herds framed by Mount Kilimanjaro',
+      'Spectacular game drives across the endless golden plains of the Maasai Mara',
+      'Big Cat encounters: prides of lions, cheetahs on termite mounds, and leopards in acacia trees',
+      'Authentic Maasai Manyatta cultural dialogue and traditional leaping dance',
+      'Great Rift Valley viewpoint and Lake Naivasha boat safari among hippos'
+    ],
+    dayByDay: [
+      {
+        dayNumber: 1,
+        title: 'Nairobi to Amboseli National Park – The Foot of Kilimanjaro',
+        destination: 'Amboseli National Park',
+        description: 'Depart Nairobi early morning, driving through traditional Maasai country toward Amboseli, famed for the best views of Mount Kilimanjaro.',
+        morning: 'Pickup from Nairobi hotel or JKIA airport; drive southeast across savannah plains.',
+        afternoon: 'Arrive at lodge in time for lunch; afternoon game drive in search of big tuskers.',
+        evening: 'Sunset drinks with clear views of Kilimanjaro’s snowy peaks.',
+        mealsIncluded: 'Lunch, Dinner',
+        accommodationType: 'Amboseli Serena Safari Lodge / Ol Tukai Lodge',
+        highlights: ['First sight of Kilimanjaro', 'Big tusker elephant herds', 'Amboseli marshes']
+      },
+      {
+        dayNumber: 2,
+        title: 'Full Day in Amboseli – Marshes, Predators & Observation Hill',
+        destination: 'Amboseli National Park',
+        description: 'Full day exploring Amboseli’s emerald swamps fed by underground melting snows from Kilimanjaro, surrounded by arid dust plains.',
+        morning: 'Dawn game drive while Kilimanjaro is cloud-free; spot lions and hyenas on patrol.',
+        afternoon: 'Ascend Observation Hill for panoramic views of swamps filled with hippos and pelicans.',
+        evening: 'Dinner and Maasai cultural storytelling under the starlit African sky.',
+        mealsIncluded: 'Breakfast, Lunch, Dinner',
+        accommodationType: 'Amboseli Serena Safari Lodge',
+        highlights: ['Observation hill panorama', 'Swamp hippo pods', 'Predator tracking']
+      },
+      {
+        dayNumber: 3,
+        title: 'Amboseli to Lake Naivasha – Great Rift Valley & Crescent Island',
+        destination: 'Lake Naivasha, Great Rift Valley',
+        description: 'Travel north into the Great African Rift Valley to freshwater Lake Naivasha.',
+        morning: 'Final morning game drive in Amboseli; drive through Nairobi into the Rift Valley.',
+        afternoon: 'Boat safari on Lake Naivasha; walking safari on Crescent Island alongside giraffes and zebras.',
+        evening: 'Lakeside dinner surrounded by yellow-barked acacia fever trees.',
+        mealsIncluded: 'Breakfast, Lunch, Dinner',
+        accommodationType: 'Lake Naivasha Sopa Resort / Enashipai Resort',
+        highlights: ['Great Rift Valley escarpment view', 'Lake Naivasha boat ride', 'Crescent Island walking safari']
+      },
+      {
+        dayNumber: 4,
+        title: 'Lake Naivasha to Maasai Mara National Reserve',
+        destination: 'Maasai Mara National Reserve',
+        description: 'Ascend the Rift Valley wall and enter the legendary Maasai Mara, jewel of Kenya’s wildlife conservation areas.',
+        morning: 'Drive through Narok town, the commercial capital of the Maasai people.',
+        afternoon: 'Enter the Mara; introductory game drive across the sweeping golden savannah.',
+        evening: 'Check-in at luxury tented camp overlooking the Talek or Mara river.',
+        mealsIncluded: 'Breakfast, Lunch, Dinner',
+        accommodationType: 'Mara Serena Safari Lodge / Ashnil Mara Camp',
+        highlights: ['Maasai Mara entry drive', 'Endless savannah vistas', 'Luxury tented camp stay']
+      },
+      {
+        dayNumber: 5,
+        title: 'Full Day in the Maasai Mara – Big Cats & River Crossings',
+        destination: 'Maasai Mara National Reserve',
+        description: 'An exhilarating full-day game drive with picnic lunch under an umbrella acacia tree, following predator trails.',
+        morning: 'Dawn game drive: tracking prides of lions and solitary leopards.',
+        afternoon: 'Picnic lunch in the wild; visit famous Mara river crossing points teeming with giant Nile crocodiles.',
+        evening: 'Optional Maasai village visit or sundowner cocktail overlooking the plains.',
+        mealsIncluded: 'Breakfast, Lunch, Dinner',
+        accommodationType: 'Mara Serena Safari Lodge / Ashnil Mara Camp',
+        highlights: ['Big Cat sightings', 'Mara river hippos & crocodiles', 'Acacia tree bush picnic']
+      },
+      {
+        dayNumber: 6,
+        title: 'Sunrise Safari in the Mara & Return to Nairobi',
+        destination: 'Nairobi Airport',
+        description: 'Final morning safari to witness early morning predator activity before returning to Nairobi.',
+        morning: 'Sunrise game drive; breakfast at camp.',
+        afternoon: 'Scenic drive or optional bush flight back to Nairobi.',
+        evening: 'Dinner at the world-famous Carnivore Restaurant or transfer to JKIA airport for outbound flights.',
+        mealsIncluded: 'Breakfast, Lunch',
+        accommodationType: 'Departure day',
+        highlights: ['Sunrise predator game drive', 'Nairobi return', 'Departure transfer']
+      }
+    ],
+    included: [
+      'Transport in custom 4x4 safari Land Cruiser with pop-up game viewing roof',
+      '5 nights luxury/mid-range lodge and tented camp accommodation',
+      'All meals on full board during safari',
+      'All national park entrance fees for Amboseli and Maasai Mara',
+      'Lake Naivasha boat safari and Crescent Island walking guide fees',
+      'Professional certified KPSGA safari driver-guide',
+      'Complimentary bottled mineral water throughout the safari'
+    ],
+    excluded: [
+      'International flights to/from Nairobi',
+      'Kenya entry electronic travel authorization (eTA)',
+      'Optional hot air balloon flight over Maasai Mara with champagne breakfast ($450)',
+      'Tips for guide and camp staff'
+    ],
+    packingAdvice: [
+      'Neutral safari colors (khaki, olive green, tan)',
+      'Warm fleece for early morning game drives in open vehicles',
+      'High magnification binoculars and telephoto camera lenses'
+    ]
+  },
+
+  // 13. Dedicated Tanzania Itinerary: 7-Day Tanzania Northern Circuit (Serengeti & Ngorongoro)
+  {
+    id: 'tanzania-serengeti-ngorongoro-7day',
+    title: '7-Day Tanzania Northern Circuit: Serengeti & Ngorongoro Crater',
+    tagline: 'The ultimate East African wildlife spectacle: Baobabs, ancient calderas & predator plains',
+    pillar: 'wildlife',
+    pillarLabel: 'Tanzania Northern Circuit',
+    durationDays: 7,
+    durationNights: 6,
+    startLocation: 'Arusha / Kilimanjaro Airport (JRO), Tanzania',
+    endLocation: 'Arusha / Kilimanjaro Airport (JRO), Tanzania',
+    countries: ['Tanzania'],
+    difficulty: 'Moderate',
+    groupSize: '2 to 8 travelers',
+    idealFor: 'Wildlife documentary lovers, photographers, bucket-list adventurers',
+    featured: true,
+    overview: 'Explore the crown jewels of Tanzania’s Northern Safari Circuit. Marvel at ancient baobab trees and massive elephant herds in Tarangire, descend 600 meters into the unbroken volcanic caldera of Ngorongoro Crater, and track the great wildlife spectacle across the vast plains of the Serengeti.',
+    keyHighlights: [
+      'Descend into the UNESCO World Heritage Ngorongoro Crater, teeming with over 25,000 large animals',
+      'Encounter critically endangered Black Rhinos on the caldera floor',
+      'Serengeti National Park game drives across Seronera river valleys and granite kopjes',
+      'Visit Olduvai Gorge, the cradle of mankind, where early hominid fossils were unearthed',
+      'Tarangire National Park elephant herds digging for subterranean riverbed water'
+    ],
+    dayByDay: [
+      {
+        dayNumber: 1,
+        title: 'Arrival in Arusha – The Safari Capital of Tanzania',
+        destination: 'Arusha, Tanzania',
+        description: 'Arrive at Kilimanjaro International Airport (JRO). Greeted by your Jamainus Safaris Tanzania guide and transferred to your serene coffee lodge nestled under Mount Meru.',
+        morning: 'Airport arrival and customs clearance.',
+        afternoon: 'Check-in and safari orientation on the Northern Circuit.',
+        evening: 'Dinner featuring Swahili spice specialties and fresh tropical fruits.',
+        mealsIncluded: 'Dinner',
+        accommodationType: 'Arusha Planet Lodge / Mount Meru Hotel',
+        highlights: ['Mount Meru views', 'Safari briefing', 'Swahili culinary welcome']
+      },
+      {
+        dayNumber: 2,
+        title: 'Arusha to Tarangire National Park – Kingdom of Elephants & Baobabs',
+        destination: 'Tarangire National Park',
+        description: 'Drive to Tarangire, famous for possessing the highest concentration of wildlife outside the Serengeti and massive ancient baobab trees.',
+        morning: 'Scenic drive to Tarangire; begin morning game drive along the Tarangire River.',
+        afternoon: 'Observe elephant family herds bathing and feeding beneath towering thousand-year-old baobabs.',
+        evening: 'Lodge perched with panoramic views of the African wilderness.',
+        mealsIncluded: 'Breakfast, Lunch, Dinner',
+        accommodationType: 'Tarangire Safari Lodge / Maramboi Tented Camp',
+        highlights: ['Ancient giant baobab trees', 'Massive elephant breeding herds', 'Tarangire river wildlife']
+      },
+      {
+        dayNumber: 3,
+        title: 'Tarangire to Lake Manyara – Tree-Climbing Lions & Flamingos',
+        destination: 'Lake Manyara National Park',
+        description: 'Explore Lake Manyara nestled at the base of the Great Rift Valley western escarpment.',
+        morning: 'Short drive to Lake Manyara; drive through lush groundwater forest filled with baboons.',
+        afternoon: 'Witness thousands of pink flamingos lining the alkaline lake shores; search for tree-climbing lions.',
+        evening: 'Ascend the Rift Valley wall to Karatu coffee highlands.',
+        mealsIncluded: 'Breakfast, Lunch, Dinner',
+        accommodationType: 'Ngorongoro Farm House / Marera Valley Lodge, Karatu',
+        highlights: ['Groundwater forest baboon troops', 'Flamingo flock reflections', 'Karatu coffee highlands']
+      },
+      {
+        dayNumber: 4,
+        title: 'Karatu to Central Serengeti – Endless Plains & Olduvai Gorge',
+        destination: 'Serengeti National Park',
+        description: 'Travel through the Ngorongoro Conservation Area, stopping at Olduvai Gorge before descending into the legendary Serengeti plains.',
+        morning: 'Drive through misty crater rim forests; visit Olduvai Gorge museum.',
+        afternoon: 'Enter the Serengeti ("endless plains" in Maasai); afternoon game drive spotting cheetahs.',
+        evening: 'Arrive at classic safari tented camp; campfire under the southern cross constellation.',
+        mealsIncluded: 'Breakfast, Lunch, Dinner',
+        accommodationType: 'Serengeti Kati Kati Tented Camp / Kubu Kubu Tented Lodge',
+        highlights: ['Olduvai Gorge museum', 'Endless savannah horizon', 'Wild tented camp stay']
+      },
+      {
+        dayNumber: 5,
+        title: 'Full Day Deep Serengeti Safari – The Great Circle of Life',
+        destination: 'Central Serengeti (Seronera)',
+        description: 'A full day exploring the Seronera River valley, the premier predator capital of the African continent.',
+        morning: 'Dawn game drive: pride of lions hunting and leopards lounging in sausage trees.',
+        afternoon: 'Picnic lunch at a scenic rocky kopje; watching herds of wildebeests, zebras, and gazelles.',
+        evening: 'Sundowner on the open savannah; three-course dinner under canvas.',
+        mealsIncluded: 'Breakfast, Lunch, Dinner',
+        accommodationType: 'Serengeti Kati Kati Tented Camp',
+        highlights: ['Seronera predator density', 'Rock kopjes wildlife', 'African bush sundowner']
+      },
+      {
+        dayNumber: 6,
+        title: 'Serengeti to the Rim of Ngorongoro Crater',
+        destination: 'Ngorongoro Conservation Area',
+        description: 'Final morning game drive across the Serengeti plains before driving up to the panoramic rim of the Ngorongoro Crater.',
+        morning: 'Sunrise game drive; look for elusive bat-eared foxes and serval cats.',
+        afternoon: 'Drive to the Ngorongoro crater rim (2,200 meters altitude); breathtaking first view into the caldera.',
+        evening: 'Dinner overlooking the caldera floor shrouded in evening clouds.',
+        mealsIncluded: 'Breakfast, Lunch, Dinner',
+        accommodationType: 'Ngorongoro Serena Safari Lodge / Rhino Lodge',
+        highlights: ['Early predator drive', 'Caldera rim panoramic overlook', 'Highland fireplace dinner']
+      },
+      {
+        dayNumber: 7,
+        title: 'Ngorongoro Crater Floor Tour & Return to Arusha / Kilimanjaro',
+        destination: 'Arusha & Kilimanjaro Airport',
+        description: 'Descend 600 meters down into the world’s largest intact volcanic caldera for a sensational morning game drive.',
+        morning: 'Early morning descent into the crater floor: black rhinos, lion prides, hippos in Lake Magadi.',
+        afternoon: 'Picnic lunch beside the Ngoitokitok hippo pool; ascend the steep crater walls and drive back to Arusha.',
+        evening: 'Transfer to Kilimanjaro International Airport (JRO) for departure flights.',
+        mealsIncluded: 'Breakfast, Lunch',
+        accommodationType: 'Departure day',
+        highlights: ['600m caldera descent', 'Black Rhino encounter', 'Ngoitokitok hippo pool']
+      }
+    ],
+    included: [
+      'Transport in specialized 4x4 safari Land Cruiser with pop-up roof and fridge',
+      '6 nights quality lodge and authentic tented camp accommodation',
+      'All meals on full board throughout safari',
+      'All national park conservation fees (Tarangire, Lake Manyara, Serengeti, Ngorongoro)',
+      'Ngorongoro Crater vehicle descent permit fee included',
+      'Services of certified professional Tanzanian safari guide',
+      'Purified bottled water inside safari cruiser throughout'
+    ],
+    excluded: [
+      'International flights and Tanzania tourist visa',
+      'Optional Serengeti hot air balloon safari ($599)',
+      'Gratuities for driver-guide and camp staff'
+    ],
+    packingAdvice: [
+      'Warm jacket or fleece (Ngorongoro crater rim is high altitude and very chilly at night)',
+      'Neutral safari clothing in khaki or green',
+      'Binoculars and extra memory cards'
+    ]
+  },
+
+  // 14. Dedicated Tanzania & Zanzibar Itinerary: 9-Day Bush to Beach (Serengeti & Zanzibar)
+  {
+    id: 'tanzania-serengeti-zanzibar-9day',
+    title: '9-Day Tanzania Bush to Beach: Serengeti Wildlife & Zanzibar Spice Island',
+    tagline: 'The ultimate African combination: Big Five wilderness followed by pristine turquoise Swahili shores',
+    pillar: 'wildlife',
+    pillarLabel: 'Bush & Beach Expedition',
+    durationDays: 9,
+    durationNights: 8,
+    startLocation: 'Kilimanjaro / Arusha (JRO), Tanzania',
+    endLocation: 'Zanzibar International Airport (ZNZ)',
+    countries: ['Tanzania', 'Zanzibar'],
+    difficulty: 'Easy',
+    groupSize: '2 to 10 travelers',
+    idealFor: 'Honeymooners, couples, families, anniversary celebrations, luxury travelers',
+    featured: true,
+    overview: 'The dream African holiday seamlessly uniting world-class wildlife safaris with tropical island relaxation. Experience Tarangire elephants, the Ngorongoro Crater, and the Serengeti plains before boarding a bush plane to the exotic spice island of Zanzibar for UNESCO Stone Town heritage and white-sand coral beaches.',
+    keyHighlights: [
+      'Big Five game drives across Tarangire, Ngorongoro Crater, and the Serengeti',
+      'Scenic bush plane flight directly from Serengeti bush airstrip to Zanzibar Island',
+      'Guided walking tour of UNESCO World Heritage Stone Town and Sultan’s Palace',
+      'Aromatic Swahili spice plantation tour tasting fresh cloves, vanilla, and nutmeg',
+      'Relaxation on powder-white coral sands with turquoise Indian Ocean waters in Nungwi',
+      'Traditional wooden dhow sunset sailing cruise with Swahili music and hors d’oeuvres'
+    ],
+    dayByDay: [
+      {
+        dayNumber: 1,
+        title: 'Arrival in Arusha – Welcome to Tanzania',
+        destination: 'Arusha, Tanzania',
+        description: 'Arrive at Kilimanjaro Airport (JRO); met by Jamainus Safaris guide and transferred to your boutique lodge.',
+        morning: 'Airport reception and transfer.',
+        afternoon: 'Relaxation in lush gardens under Mount Meru.',
+        evening: 'Welcome dinner and safari briefing.',
+        mealsIncluded: 'Dinner',
+        accommodationType: 'Arusha Planet Lodge',
+        highlights: ['Arusha coffee gardens', 'Safari briefing']
+      },
+      {
+        dayNumber: 2,
+        title: 'Tarangire National Park – Elephants & Baobab Landscapes',
+        destination: 'Tarangire National Park',
+        description: 'Full-day game drive in Tarangire, tracking large elephant herds and predators along the Tarangire river.',
+        morning: 'Drive to Tarangire; begin morning wildlife drive.',
+        afternoon: 'Picnic lunch overlooking riverbanks teeming with giraffes, zebras, and impalas.',
+        evening: 'Check-in at safari lodge in Karatu highland corridor.',
+        mealsIncluded: 'Breakfast, Lunch, Dinner',
+        accommodationType: 'Marera Valley Lodge, Karatu',
+        highlights: ['Baobab forests', 'Elephant herds', 'Karatu views']
+      },
+      {
+        dayNumber: 3,
+        title: 'Ngorongoro Crater Floor Safari – The Caldera Wonder',
+        destination: 'Ngorongoro Conservation Area',
+        description: 'Descend 600m into the volcanic caldera for an unforgettable Big 5 safari.',
+        morning: 'Caldera descent: spot lions, endangered black rhinos, and flamingo-lined soda lakes.',
+        afternoon: 'Bush picnic lunch on the crater floor; ascend toward the Serengeti gate.',
+        evening: 'Enter Serengeti National Park; stay in deluxe tented camp.',
+        mealsIncluded: 'Breakfast, Lunch, Dinner',
+        accommodationType: 'Serengeti Kati Kati Tented Camp',
+        highlights: ['Crater floor descent', 'Black Rhino encounter', 'Serengeti arrival']
+      },
+      {
+        dayNumber: 4,
+        title: 'Full Day Serengeti Big Cat Safari',
+        destination: 'Serengeti National Park',
+        description: 'Tracking lions, leopards, cheetahs, and the vast migrations across the endless plains.',
+        morning: 'Sunrise game drive along the Seronera river valley.',
+        afternoon: 'Afternoon game drive around magnificent granite kopjes.',
+        evening: 'Campfire under the southern skies.',
+        mealsIncluded: 'Breakfast, Lunch, Dinner',
+        accommodationType: 'Serengeti Kati Kati Tented Camp',
+        highlights: ['Big Cat tracking', 'Serengeti kopjes', 'Campfire dinner']
+      },
+      {
+        dayNumber: 5,
+        title: 'Bush Flight from Serengeti directly to Zanzibar Island',
+        destination: 'Stone Town, Zanzibar',
+        description: 'Board a scenic light aircraft from Seronera airstrip, flying over the Great Rift Valley directly to the spice island of Zanzibar.',
+        morning: 'Morning bush flight over Mount Kilimanjaro to Zanzibar (ZNZ).',
+        afternoon: 'Arrive in Zanzibar; transfer to historic Stone Town boutique hotel.',
+        evening: 'Sunset rooftop dinner overlooking dhow boats in the harbor.',
+        mealsIncluded: 'Breakfast, Dinner',
+        accommodationType: 'Zanzibar Serena Hotel / Dhow Palace Hotel, Stone Town',
+        highlights: ['Scenic bush flight', 'Stone Town architecture', 'Harbor sunset dinner']
+      },
+      {
+        dayNumber: 6,
+        title: 'Stone Town UNESCO Heritage & Organic Spice Farm Tour',
+        destination: 'Stone Town & Spice Plantations',
+        description: 'Immerse in the rich Swahili, Arabic, and Indian history of Stone Town and the aromatic spices that earned Zanzibar its name.',
+        morning: 'Walking tour of Stone Town: House of Wonders, Old Fort, and Sultan’s Palace.',
+        afternoon: 'Guided spice plantation walk: smell, touch, and taste fresh cloves, cinnamon, vanilla, and lemongrass.',
+        evening: 'Transfer to your luxury beachfront resort on northern Zanzibar beaches (Nungwi / Kendwa).',
+        mealsIncluded: 'Breakfast, Lunch, Dinner',
+        accommodationType: 'Royal Zanzibar Beach Resort / Riu Palace Zanzibar',
+        highlights: ['Stone Town UNESCO walk', 'Spice plantation tasting', 'White sand beach arrival']
+      },
+      {
+        dayNumber: 7,
+        title: 'Zanzibar Beach Relaxation & Coral Reef Snorkeling',
+        destination: 'Nungwi / Kendwa Beach',
+        description: 'A day of pure tropical relaxation on powder-white sands with turquoise waters undisturbed by high tides.',
+        morning: 'Relax on the beach or take an optional boat to Mnemba Atoll for world-class snorkeling.',
+        afternoon: 'Fresh coconut water and tropical seafood lunch on the beach.',
+        evening: 'Stroll along the coast as dhows sail in the golden light.',
+        mealsIncluded: 'Breakfast, Lunch, Dinner',
+        accommodationType: 'Royal Zanzibar Beach Resort',
+        highlights: ['Turquoise ocean swimming', 'Mnemba coral reef', 'Beachfront relaxation']
+      },
+      {
+        dayNumber: 8,
+        title: 'Traditional Wooden Dhow Sunset Sailing Cruise',
+        destination: 'Zanzibar Ocean Waters',
+        description: 'Sail the Indian Ocean on a handcrafted wooden Swahili dhow under billowing white sails.',
+        morning: 'Leisurely morning by the resort swimming pools and spa.',
+        afternoon: 'Cocktails and relaxation by the palm trees.',
+        evening: 'Private sunset dhow cruise with live acoustic Swahili music, fresh fruit skewers, and cold refreshments.',
+        mealsIncluded: 'Breakfast, Lunch, Dinner',
+        accommodationType: 'Royal Zanzibar Beach Resort',
+        highlights: ['Wooden dhow sailing', 'Acoustic Swahili music', 'Indian ocean sunset']
+      },
+      {
+        dayNumber: 9,
+        title: 'Farewell Zanzibar & Departure Flights',
+        destination: 'Zanzibar Airport (ZNZ)',
+        description: 'Enjoy your final morning swim and tropical breakfast before transferring to the airport for your flight home.',
+        morning: 'Breakfast on the ocean terrace; final souvenir shopping for spices and Tanzanite.',
+        afternoon: 'Transfer to Abeid Amani Karume International Airport (ZNZ) for departure.',
+        evening: 'Outbound international flight.',
+        mealsIncluded: 'Breakfast',
+        accommodationType: 'Departure day',
+        highlights: ['Final morning swim', 'Zanzibar spice souvenirs', 'Departure transfer']
+      }
+    ],
+    included: [
+      'Ground safari in 4x4 Land Cruiser with pop-up roof in Tanzania mainland',
+      'Domestic scheduled flight from Serengeti airstrip to Zanzibar Airport',
+      '4 nights safari lodges/tented camps on full board',
+      '4 nights Zanzibar luxury beach resort on full board / all-inclusive',
+      'All Tanzania national park fees (Tarangire, Serengeti, Ngorongoro Crater)',
+      'Stone Town walking tour and authentic Swahili spice plantation tour',
+      'Sunset wooden dhow sailing cruise in Zanzibar',
+      'All airport and ferry transfers in Tanzania and Zanzibar'
+    ],
+    excluded: [
+      'International flights to Kilimanjaro and from Zanzibar',
+      'Tanzania entry visa',
+      'Zanzibar mandatory infrastructure tax ($5/night paid at hotel)',
+      'Tips for guides and resort staff'
+    ],
+    packingAdvice: [
+      'Light summer beach clothing and swimwear for Zanzibar',
+      'Modest cover-up clothing for Stone Town walking tour (shoulders and knees covered)',
+      'Neutral safari clothes and a light jacket for the Serengeti'
+    ]
   }
 ];
 
 export const FEATURED_ITINERARIES = ALL_ITINERARIES.filter(it => it.featured);
+
