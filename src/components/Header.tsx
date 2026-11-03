@@ -57,7 +57,7 @@ export const Header: React.FC<HeaderProps> = ({ currentPath, onNavigate }) => {
             </a>
             <span className="text-stone-700 hidden sm:inline">|</span>
             <a
-              href={`https://wa.me/256701817599?text=${encodeURIComponent("Hello Jamainus Safaris, I would like to inquire about a safari itinerary.")}`}
+              href={`https://wa.me/256785254899?text=${encodeURIComponent("Hello Jamainus Safaris, I would like to inquire about a safari itinerary.")}`}
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-1 text-emerald-400 hover:text-emerald-300 transition-colors"

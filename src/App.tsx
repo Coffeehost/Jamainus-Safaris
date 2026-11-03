@@ -169,7 +169,7 @@ export default function App() {
       <Footer onNavigate={navigate} />
 
       {/* Floating WhatsApp Action Button */}
-      <FloatingWhatsApp phoneNumber="256701817599" />
+      <FloatingWhatsApp phoneNumber="256785254899" />
 
       {/* Global Safari Booking & Inquiry Modal */}
       <InquiryModal

@@ -6,7 +6,7 @@ interface FloatingWhatsAppProps {
 }
 
 export const FloatingWhatsApp: React.FC<FloatingWhatsAppProps> = ({
-  phoneNumber = '256701817599',
+  phoneNumber = '256785254899',
   defaultMessage = 'Hello Jamainus Safaris, I would like to inquire about a safari itinerary.'
 }) => {
   const [isHovered, setIsHovered] = useState(false);
@@ -26,7 +26,7 @@ export const FloatingWhatsApp: React.FC<FloatingWhatsAppProps> = ({
         <span className="w-2 h-2 rounded-full bg-[#25D366] animate-pulse" />
         <div className="flex flex-col leading-tight">
           <span className="font-semibold text-white">Chat on WhatsApp</span>
-          <span className="text-[11px] font-mono text-stone-300 tabular-nums">+256 701 817599</span>
+          <span className="text-[11px] font-mono text-stone-300 tabular-nums">+256 785 254899</span>
         </div>
       </div>
 
@@ -38,7 +38,7 @@ export const FloatingWhatsApp: React.FC<FloatingWhatsAppProps> = ({
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
         className="group relative flex items-center justify-center w-14 h-14 bg-[#25D366] hover:bg-[#20ba59] active:scale-95 text-white rounded-full shadow-2xl transition-all duration-300 hover:shadow-[#25D366]/40 hover:-translate-y-0.5 focus:outline-none focus:ring-4 focus:ring-[#25D366]/30"
-        aria-label="Chat on WhatsApp with Jamainus Safaris at +256 701 817599"
+        aria-label="Chat on WhatsApp with Jamainus Safaris at +256 785 254899"
       >
         {/* Soft pulse effect */}
         <span className="absolute -inset-1 rounded-full bg-[#25D366] opacity-35 animate-ping group-hover:opacity-50" />

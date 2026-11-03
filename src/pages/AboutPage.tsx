@@ -166,23 +166,52 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
         </div>
 
         {/* Official Certifications & Regulators */}
-        <div className="bg-emerald-50/70 border border-emerald-200/80 rounded-xl p-6 space-y-4">
-          <div className="text-center sm:text-left">
-            <span className="text-xs font-bold uppercase tracking-wider text-[#166534]">
-              Regulatory & Association Recognition
-            </span>
-            <h3 className="font-serif text-xl font-bold text-stone-900 mt-0.5">
-              Fully Registered & Certified With
-            </h3>
+        <div className="bg-emerald-50/70 border border-emerald-200/80 rounded-2xl p-6 sm:p-8 space-y-6">
+          <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-2 border-b border-emerald-200/60 pb-4">
+            <div>
+              <span className="text-xs font-bold uppercase tracking-widest text-[#166534] block">
+                Regulatory & Association Recognition
+              </span>
+              <h3 className="font-serif text-2xl sm:text-3xl font-bold text-stone-900 mt-1">
+                Fully Registered & Certified With
+              </h3>
+            </div>
+            <p className="text-xs text-stone-600 max-w-md">
+              Jamainus Safaris operates in strict compliance with Ugandan tourism legislation, statutory wildlife conservation guidelines, and professional code of ethics.
+            </p>
           </div>
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3">
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
             {COMPANY_DETAILS.certifications.map((cert, idx) => (
               <div
                 key={idx}
-                className="bg-white p-3 rounded-lg border border-emerald-200 text-center space-y-1 shadow-xs"
+                className="bg-white p-5 rounded-xl border border-emerald-200/80 shadow-xs hover:shadow-md hover:border-[#166534] transition-all flex flex-col items-center text-center justify-between group"
               >
-                <span className="font-bold text-xs text-[#166534] block">{cert.acronym}</span>
-                <span className="text-[11px] text-stone-700 leading-tight block">{cert.name}</span>
+                {/* Logo Container */}
+                <div className="w-full h-20 bg-stone-50/80 rounded-lg p-2.5 flex items-center justify-center mb-3 border border-stone-100 group-hover:bg-white transition-colors">
+                  <img
+                    src={cert.logo}
+                    alt={`${cert.name} (${cert.acronym})`}
+                    referrerPolicy="no-referrer"
+                    className="max-h-16 max-w-full object-contain filter drop-shadow-xs transition-transform duration-300 group-hover:scale-105"
+                  />
+                </div>
+
+                <div className="space-y-1.5 w-full">
+                  <div className="inline-block px-2.5 py-0.5 rounded-full bg-emerald-100/80 text-[#166534] font-bold text-xs font-mono">
+                    {cert.acronym}
+                  </div>
+                  <h4 className="font-semibold text-xs text-stone-900 leading-tight">
+                    {cert.name}
+                  </h4>
+                  <p className="text-[11px] text-stone-500 leading-relaxed pt-1">
+                    {cert.description}
+                  </p>
+                </div>
+
+                <div className="w-full pt-3 mt-3 border-t border-stone-100 flex items-center justify-center gap-1 text-[10px] font-semibold text-[#166534]">
+                  <span>Verified Member</span>
+                </div>
               </div>
             ))}
           </div>

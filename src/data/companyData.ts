@@ -1,4 +1,5 @@
 import { TourismPillar, CharityFocusArea } from '../types';
+import { CERTIFICATION_LOGOS } from './imageAssets';
 
 export const COMPANY_DETAILS = {
   name: 'JAMAINUS SAFARIS',
@@ -15,18 +16,43 @@ export const COMPANY_DETAILS = {
     'jamainus784@yahoo.com'
   ],
   telephones: [
-    { display: '+256 701 817599', raw: '+256701817599', isPrimary: true, isWhatsApp: true },
+    { display: '+256 785 254899', raw: '+256785254899', isPrimary: true, isWhatsApp: true },
+    { display: '+256 701 817599', raw: '+256701817599', isPrimary: false, isWhatsApp: true },
     { display: '+256 779 448916', raw: '+256779448916', isPrimary: false, isWhatsApp: true },
-    { display: '+256 785 254899', raw: '+256785254899', isPrimary: false, isWhatsApp: false },
     { display: '+256 706 987025', raw: '+256706987025', isPrimary: false, isWhatsApp: false },
   ],
   ecotourismStatement: 'Ecotourism allows you to connect with nature, learn about environmental issues, and contribute to the protection of biodiversity. By participating in ecotourism activities, individuals can make a positive impact on the environment while creating unforgettable memories and experiences.',
   certifications: [
-    { name: 'Ministry of Tourism, Wildlife and Antiquities (Republic of Uganda)', acronym: 'MTWA' },
-    { name: 'Uganda Tourism Board', acronym: 'UTB' },
-    { name: 'Association of Uganda Tour Operators', acronym: 'AUTO' },
-    { name: 'Tour Guides Forum Uganda', acronym: 'TGFU' },
-    { name: 'Young Uganda Tour Operators', acronym: 'YUTO' }
+    {
+      name: 'Ministry of Tourism, Wildlife and Antiquities (Republic of Uganda)',
+      acronym: 'MTWA',
+      logo: CERTIFICATION_LOGOS.MTWA,
+      description: 'Principal Government Ministry responsible for wildlife conservation, national parks, and tourism regulation in Uganda.'
+    },
+    {
+      name: 'Uganda Tourism Board',
+      acronym: 'UTB',
+      logo: CERTIFICATION_LOGOS.UTB,
+      description: 'Official statutory tourism licensing authority upholding travel operator standards across the country.'
+    },
+    {
+      name: 'Association of Uganda Tour Operators',
+      acronym: 'AUTO',
+      logo: CERTIFICATION_LOGOS.AUTO,
+      description: 'Uganda’s leading professional trade association of certified, high-standard safari tour operators.'
+    },
+    {
+      name: 'Tour Guides Forum Uganda',
+      acronym: 'TGFU',
+      logo: CERTIFICATION_LOGOS.TGFU,
+      description: 'The recognized national umbrella body for certified safari driver-guides and cultural interpretive specialists.'
+    },
+    {
+      name: 'Young Uganda Tour Operators',
+      acronym: 'YUTO',
+      logo: CERTIFICATION_LOGOS.YUTO,
+      description: 'Progressive association fostering ethical entrepreneurship, youth leadership, and sustainable community ecotourism.'
+    }
   ],
   servicesOffered: [
     {

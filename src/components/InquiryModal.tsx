@@ -94,7 +94,7 @@ export const InquiryModal: React.FC<InquiryModalProps> = ({
 
               <div className="pt-3 flex flex-col sm:flex-row items-center justify-center gap-3">
                 <a
-                  href={`https://wa.me/256779448916?text=${encodeURIComponent(whatsappText)}`}
+                  href={`https://wa.me/256785254899?text=${encodeURIComponent(whatsappText)}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-2.5 bg-emerald-700 hover:bg-emerald-800 text-white text-xs font-semibold uppercase tracking-wider rounded-md transition-colors"

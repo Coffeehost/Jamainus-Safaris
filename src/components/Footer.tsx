@@ -31,16 +31,27 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
               Licensed East African tour operator headquartered in Mbale, Eastern Uganda at the foot of Mount Elgon. Connecting travellers to Uganda, Rwanda, Kenya, Tanzania, and Zanzibar.
             </p>
 
-            {/* Certifications Row */}
+            {/* Certifications Row with Logos */}
             <div className="pt-1">
-              <span className="text-[10px] font-bold uppercase tracking-wider text-stone-400 block mb-1.5">
+              <span className="text-[10px] font-bold uppercase tracking-wider text-emerald-400 block mb-2">
                 Certified & Registered With:
               </span>
-              <div className="flex flex-wrap gap-1.5 text-[10px] text-stone-300">
+              <div className="flex flex-wrap items-center gap-2">
                 {COMPANY_DETAILS.certifications.map((c, i) => (
-                  <span key={i} className="px-2 py-0.5 rounded bg-stone-800/90 border border-stone-700 font-mono">
-                    {c.acronym}
-                  </span>
+                  <div
+                    key={i}
+                    title={`${c.name} (${c.acronym})`}
+                    className="flex items-center gap-1.5 px-2 py-1 rounded bg-stone-900 border border-stone-800 hover:border-emerald-500/50 transition-colors"
+                  >
+                    <div className="w-5 h-5 bg-white rounded flex items-center justify-center p-0.5 shrink-0">
+                      <img
+                        src={c.logo}
+                        alt={c.acronym}
+                        className="max-h-full max-w-full object-contain"
+                      />
+                    </div>
+                    <span className="text-[10px] font-mono font-bold text-stone-300">{c.acronym}</span>
+                  </div>
                 ))}
               </div>
             </div>

@@ -21,7 +21,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate }) => {
     setSubmitted(true);
   };
 
-  const whatsappLink = `https://wa.me/256779448916?text=${encodeURIComponent("Hello Jamainus Safaris, I would like to get in touch regarding a safari enquiry or partnership.")}`;
+  const whatsappLink = `https://wa.me/256785254899?text=${encodeURIComponent("Hello Jamainus Safaris, I would like to get in touch regarding a safari enquiry or partnership.")}`;
 
   return (
     <div className="space-y-12 pb-20">

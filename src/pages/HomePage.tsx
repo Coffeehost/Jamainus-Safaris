@@ -285,15 +285,22 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onOpenInquiry })
             {COMPANY_DETAILS.certifications.map((cert, idx) => (
               <div
                 key={idx}
-                className="p-3.5 rounded-lg bg-stone-50 border border-stone-200/80 hover:border-[#166534]/50 transition-colors flex flex-col items-center text-center justify-center space-y-1"
+                className="p-3.5 rounded-lg bg-stone-50 border border-stone-200/80 hover:border-[#166534] hover:shadow-xs transition-all flex flex-col items-center text-center justify-between space-y-2 group"
               >
-                <div className="w-8 h-8 rounded-full bg-emerald-100 text-[#166534] flex items-center justify-center font-bold text-xs">
-                  <Award className="w-4 h-4" />
+                <div className="w-full h-14 flex items-center justify-center p-1 bg-white rounded border border-stone-100">
+                  <img
+                    src={cert.logo}
+                    alt={`${cert.name} (${cert.acronym})`}
+                    referrerPolicy="no-referrer"
+                    className="max-h-12 max-w-full object-contain filter group-hover:scale-105 transition-transform"
+                  />
                 </div>
-                <span className="font-bold text-xs text-stone-900">{cert.acronym}</span>
-                <span className="text-[11px] text-stone-600 line-clamp-2 leading-tight">
-                  {cert.name}
-                </span>
+                <div>
+                  <span className="font-bold text-xs text-[#166534] block">{cert.acronym}</span>
+                  <span className="text-[11px] text-stone-600 line-clamp-2 leading-tight block mt-0.5">
+                    {cert.name}
+                  </span>
+                </div>
               </div>
             ))}
           </div>
