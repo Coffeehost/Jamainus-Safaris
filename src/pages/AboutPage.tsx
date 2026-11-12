@@ -242,7 +242,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
               Explore The Adventure With Jamainus Safaris
             </h2>
             <p className="text-xs sm:text-sm text-stone-300 leading-relaxed">
-              Serving travellers across <strong>Uganda, Kenya, Tanzania, Zanzibar, Rwanda, Burundi, Egypt, DR Congo, and South Africa</strong>. Featuring licensed tourist drivers, top-tier safari vehicles, camping chiefs, tourist security, and airport drop & pick up.
+              Serving travellers across <strong>Uganda, Kenya, Tanzania, Zanzibar, Rwanda, Burundi, Egypt, DR Congo, and South Africa</strong>. Featuring licensed tourist drivers, top-tier safari vehicles, camping chefs, tourist security, and airport drop & pick up.
             </p>
             <div className="pt-2 flex flex-wrap items-center gap-3">
               <button
@@ -326,6 +326,63 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
             >
               <span className="text-[#166534] font-bold shrink-0">·</span>
               <span className="leading-relaxed">{aud}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Regional Network & Upcoming Offices */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-8 space-y-6">
+        <div className="border-b border-stone-200 pb-3 flex flex-col sm:flex-row sm:items-end justify-between gap-2">
+          <div>
+            <span className="text-xs uppercase tracking-widest text-[#166534] font-bold">
+              Operational Network
+            </span>
+            <h2 className="font-serif text-2xl sm:text-3xl font-bold text-stone-900 mt-1">
+              Headquarters & Upcoming Regional Offices
+            </h2>
+          </div>
+          <div className="text-xs text-stone-600">
+            Head Office: <strong className="text-stone-900">Mbale, Eastern Uganda</strong> (Active Hub)
+          </div>
+        </div>
+
+        <p className="text-xs sm:text-sm text-stone-600 leading-relaxed max-w-3xl">
+          To provide immediate on-the-ground safari coordination, licensed vehicle dispatches, and responsive guest assistance across premier conservation zones, Jamainus Safaris is opening physical liaison desks in six high-demand safari destinations:
+        </p>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          {COMPANY_DETAILS.upcomingOffices.map((off, idx) => (
+            <div
+              key={idx}
+              className="bg-white rounded-xl p-5 border border-stone-200 shadow-xs hover:border-[#166534] hover:shadow-sm transition-all flex flex-col justify-between space-y-3"
+            >
+              <div className="space-y-2">
+                <div className="flex items-center justify-between gap-2">
+                  <span className="px-2 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-amber-50 text-amber-900 border border-amber-200">
+                    {off.status}
+                  </span>
+                  <span className="text-[11px] font-mono text-stone-500 font-semibold">{off.country}</span>
+                </div>
+                <h3 className="font-serif text-lg font-bold text-stone-900 flex items-center gap-1.5">
+                  <MapPin className="w-4 h-4 text-[#166534] shrink-0" />
+                  <span>{off.location}</span>
+                </h3>
+                <div className="text-xs text-[#166534] font-medium">{off.region}</div>
+                <p className="text-xs text-stone-600 leading-relaxed pt-1">
+                  {off.focus}
+                </p>
+              </div>
+
+              <div className="pt-2 border-t border-stone-100 flex items-center justify-between text-[11px] text-stone-500">
+                <span>{off.badge}</span>
+                <button
+                  onClick={() => onNavigate('/contact')}
+                  className="text-[#166534] font-semibold hover:underline cursor-pointer"
+                >
+                  Contact Desk &rarr;
+                </button>
+              </div>
             </div>
           ))}
         </div>

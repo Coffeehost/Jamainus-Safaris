@@ -230,6 +230,37 @@ export const DestinationsPage: React.FC<DestinationsPageProps> = ({ onNavigate, 
           ))}
         </div>
 
+        {/* Strategic Field Desks Opening Soon */}
+        <div className="bg-emerald-50/70 border border-emerald-200/80 rounded-2xl p-6 sm:p-8 space-y-4">
+          <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-2 border-b border-emerald-200 pb-3">
+            <div>
+              <span className="text-xs uppercase tracking-widest text-[#166534] font-bold">
+                Field Deployment
+              </span>
+              <h3 className="font-serif text-2xl font-bold text-stone-900 mt-1">
+                Regional Safari Desks Opening Soon
+              </h3>
+            </div>
+            <div className="text-xs text-stone-600">
+              Active Headquarters: <strong className="text-stone-900">Mbale, Eastern Uganda</strong>
+            </div>
+          </div>
+          <p className="text-xs sm:text-sm text-stone-600 leading-relaxed">
+            Establishing local presence across critical gorilla sanctuaries, primate capitals, geothermal valleys, and trans-boundary game corridors:
+          </p>
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 pt-1">
+            {COMPANY_DETAILS.upcomingOffices.map((off, idx) => (
+              <div key={idx} className="bg-white p-3 rounded-lg border border-emerald-200/70 text-center space-y-1 shadow-2xs">
+                <span className="font-serif font-bold text-xs text-stone-900 block">{off.location}</span>
+                <span className="text-[10px] text-stone-500 block">{off.country}</span>
+                <span className="inline-block text-[9px] font-mono font-bold text-[#166534] bg-emerald-50 px-1.5 py-0.5 rounded">
+                  {off.status}
+                </span>
+              </div>
+            ))}
+          </div>
+        </div>
+
         {/* Operational Note from PDF */}
         <div className="p-4 rounded-xl bg-stone-100 border border-stone-300 text-xs text-stone-700 leading-relaxed">
           <strong>Important Operational Notice:</strong> These regions represent our strategic direction and potential areas for future partnerships. The inclusion of a country or region in this profile does not mean every destination or itinerary is currently available for open booking. Specific trips will depend on operational readiness, local partners, permits, costs, transport, safety considerations, and confirmed availability.

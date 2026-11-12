@@ -70,3 +70,12 @@ export interface CustomSafariRequest {
   disabilityAccessibilityNeeds?: string;
   specialRequests?: string;
 }
+
+export interface UpcomingOffice {
+  location: string;
+  country: string;
+  region: string;
+  status: string;
+  focus: string;
+  badge: string;
+}

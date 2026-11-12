@@ -193,6 +193,16 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                   </div>
                 ))}
               </div>
+
+              {/* Upcoming Regional Liaison Offices */}
+              <div className="pt-2 border-t border-stone-800 space-y-1">
+                <span className="text-[10px] font-bold uppercase tracking-wider text-amber-400 block">
+                  Offices Opening Soon:
+                </span>
+                <p className="text-[11px] text-stone-400 leading-tight">
+                  {COMPANY_DETAILS.upcomingOffices.map(o => o.location).join(' · ')}
+                </p>
+              </div>
             </div>
           </div>
         </div>

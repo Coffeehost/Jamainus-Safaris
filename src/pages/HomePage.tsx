@@ -473,6 +473,59 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onOpenInquiry })
         </div>
       </section>
 
+      {/* Regional Offices Opening Soon Section */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-8">
+        <div className="bg-amber-50/70 border border-amber-200/80 rounded-2xl p-6 sm:p-8 space-y-6">
+          <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 border-b border-amber-200/60 pb-4">
+            <div>
+              <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-100 text-amber-900 text-xs font-bold uppercase tracking-wider mb-2">
+                <span className="w-2 h-2 rounded-full bg-amber-600 animate-pulse" />
+                <span>Regional Safari Network</span>
+              </div>
+              <h2 className="font-serif text-2xl sm:text-3xl font-bold text-stone-900">
+                Offices Opening Soon Across East Africa
+              </h2>
+              <p className="text-xs sm:text-sm text-stone-600 mt-1 max-w-2xl">
+                In addition to our active Headquarters in Mbale, we are establishing on-the-ground liaison desks in six key wildlife, gorilla, and cross-border safari circuits.
+              </p>
+            </div>
+
+            <button
+              onClick={() => onNavigate('/contact')}
+              className="px-5 py-2.5 bg-[#166534] hover:bg-[#14532d] text-white text-xs font-bold uppercase tracking-wider rounded-full shadow-xs self-start sm:self-auto cursor-pointer"
+            >
+              Contact Operations Desk
+            </button>
+          </div>
+
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
+            {COMPANY_DETAILS.upcomingOffices.map((office, idx) => (
+              <div
+                key={idx}
+                className="bg-white p-4 rounded-xl border border-amber-200/70 shadow-xs hover:border-[#166534] hover:shadow-md transition-all flex flex-col justify-between text-center group"
+              >
+                <div>
+                  <div className="w-8 h-8 rounded-full bg-emerald-50 text-[#166534] flex items-center justify-center mx-auto mb-2 border border-emerald-100 group-hover:bg-[#166534] group-hover:text-white transition-colors">
+                    <MapPin className="w-4 h-4" />
+                  </div>
+                  <h3 className="font-serif font-bold text-sm text-stone-900 group-hover:text-[#166534] transition-colors">
+                    {office.location}
+                  </h3>
+                  <span className="text-[10px] text-stone-500 font-medium block mt-0.5">
+                    {office.country}
+                  </span>
+                </div>
+                <div className="pt-2 mt-2 border-t border-stone-100">
+                  <span className="inline-block text-[9px] font-bold uppercase px-2 py-0.5 rounded-full bg-amber-100 text-amber-900">
+                    Opening Soon
+                  </span>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* East African Multi-Country Destinations Spotlight */}
       <section className="max-w-7xl mx-auto px-4 sm:px-8 space-y-8">
         <div className="text-center max-w-3xl mx-auto space-y-3">

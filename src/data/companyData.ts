@@ -1,4 +1,4 @@
-import { TourismPillar, CharityFocusArea } from '../types';
+import { TourismPillar, CharityFocusArea, UpcomingOffice } from '../types';
 import { CERTIFICATION_LOGOS } from './imageAssets';
 
 export const COMPANY_DETAILS = {
@@ -71,8 +71,8 @@ export const COMPANY_DETAILS = {
       icon: 'Compass'
     },
     {
-      title: 'Camping Chiefs',
-      description: 'Dedicated wilderness culinary chiefs and camp logistics masters preparing wholesome, organic hot meals and bush banquets on safari.',
+      title: 'Camping Chefs',
+      description: 'Dedicated wilderness culinary chefs and camp logistics masters preparing wholesome, organic hot meals and bush banquets on safari.',
       icon: 'UtensilsCrossed'
     },
     {
@@ -116,6 +116,56 @@ export const COMPANY_DETAILS = {
     { name: 'Egypt', tag: 'Nile River Heritage & Ancient Civilizations' },
     { name: 'DR Congo', tag: 'Congo Basin Forests & Virunga Range' },
     { name: 'South Africa', tag: 'Kruger Wildlife & Cape Scenic Coastline' }
+  ],
+  upcomingOffices: [
+    {
+      location: 'Kisoro',
+      country: 'Uganda',
+      region: 'Southwestern Uganda (Bwindi & Mgahinga)',
+      status: 'Opening Soon',
+      focus: 'Mountain Gorilla & Golden Monkey Tracking, Batwa Cultural Trails, Lake Mutanda & Virunga Volcano Climbs',
+      badge: 'Gorilla & Volcanoes Hub'
+    },
+    {
+      location: 'Kibale',
+      country: 'Uganda',
+      region: 'Western Uganda (Fort Portal & Kibale Forest)',
+      status: 'Opening Soon',
+      focus: 'Chimpanzee Habituation & Tracking, Bigodi Wetland Sanctuary, Crater Lakes & Rwenzori Foothills',
+      badge: 'Primate Capital'
+    },
+    {
+      location: 'Sempaya Hot Springs',
+      country: 'Uganda',
+      region: 'Semuliki National Park (Bundibugyo & Albertine Rift)',
+      status: 'Opening Soon',
+      focus: 'Geothermal Sempaya Springs, Central African Lowland Rainforest Birding, Bambuti Pygmy Cultural Encounters',
+      badge: 'Eco & Geothermal'
+    },
+    {
+      location: 'Moroto',
+      country: 'Uganda',
+      region: 'Karamoja Sub-region & Kidepo Valley Corridor',
+      status: 'Opening Soon',
+      focus: 'Mount Moroto Trekking, Authentic Karimojong Manyatta Cultural Tours & Kidepo Valley Wilderness Expeditions',
+      badge: 'Wild North'
+    },
+    {
+      location: 'Rwanda',
+      country: 'Rwanda',
+      region: 'Kigali City & Volcanoes National Park (Musanze)',
+      status: 'Opening Soon',
+      focus: 'Rwanda-Uganda Cross-Border Expeditions, Volcanoes Gorillas, Nyungwe Forest Canopy Walk & Lake Kivu',
+      badge: 'Regional Liaison'
+    },
+    {
+      location: 'Tanzania',
+      country: 'Tanzania',
+      region: 'Arusha, Serengeti & Kilimanjaro Safari Circuit',
+      status: 'Opening Soon',
+      focus: 'Serengeti Great Migration, Ngorongoro Crater, Mount Kilimanjaro Expeditions & Zanzibar Swahili Beach Extensions',
+      badge: 'Safari Operations'
+    }
   ],
   charityArm: {
     name: 'JAMAINUS CHARITY FOUNDATION LTD',
