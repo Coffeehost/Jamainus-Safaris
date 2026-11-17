@@ -21,6 +21,26 @@ export const COMPANY_DETAILS = {
     { display: '+256 779 448916', raw: '+256779448916', isPrimary: false, isWhatsApp: true },
     { display: '+256 706 987025', raw: '+256706987025', isPrimary: false, isWhatsApp: false },
   ],
+  socialMedia: [
+    {
+      id: 'linkedin' as const,
+      name: 'LinkedIn',
+      handle: 'Jamainus Investment Limited',
+      url: 'https://ug.linkedin.com/company/jamainus-investment-limited',
+    },
+    {
+      id: 'youtube' as const,
+      name: 'YouTube',
+      handle: 'Jamainus Safaris',
+      url: 'https://www.youtube.com/channel/UCKpQ-SNyktaEMwOierZqT4w',
+    },
+    {
+      id: 'instagram' as const,
+      name: 'Instagram',
+      handle: '@jamai.nus',
+      url: 'https://www.instagram.com/jamai.nus/',
+    },
+  ],
   ecotourismStatement: 'Ecotourism allows you to connect with nature, learn about environmental issues, and contribute to the protection of biodiversity. By participating in ecotourism activities, individuals can make a positive impact on the environment while creating unforgettable memories and experiences.',
   certifications: [
     {

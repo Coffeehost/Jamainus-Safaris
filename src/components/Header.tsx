@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Phone, Mail, MapPin, Menu, X, MessageCircle, Compass } from 'lucide-react';
 import { COMPANY_DETAILS } from '../data/companyData';
+import { SocialBrandIcon } from './SocialIcons';
 
 interface HeaderProps {
   currentPath: string;
@@ -65,6 +66,22 @@ export const Header: React.FC<HeaderProps> = ({ currentPath, onNavigate }) => {
               <MessageCircle className="w-3.5 h-3.5 shrink-0" />
               <span>WhatsApp Us</span>
             </a>
+            <span className="text-stone-700 hidden md:inline">|</span>
+            <div className="hidden md:flex items-center gap-2.5">
+              {COMPANY_DETAILS.socialMedia.map((social) => (
+                <a
+                  key={social.id}
+                  href={social.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title={`${social.name}: ${social.handle}`}
+                  aria-label={`${social.name} - ${social.handle}`}
+                  className="hover:scale-110 transition-transform inline-flex items-center justify-center"
+                >
+                  <SocialBrandIcon id={social.id} className="w-4 h-4" />
+                </a>
+              ))}
+            </div>
           </div>
         </div>
       </div>
@@ -201,10 +218,26 @@ export const Header: React.FC<HeaderProps> = ({ currentPath, onNavigate }) => {
               >
                 BOOK A TRIP / Plan Safari
               </button>
-              <div className="pt-2 text-xs text-stone-500 space-y-1">
-                <p>Mbale, Eastern Uganda · P.O. Box 530</p>
-                <p className="font-mono">{primaryPhone.display}</p>
-                <p>{COMPANY_DETAILS.emails[0]}</p>
+              <div className="pt-2 text-xs text-stone-500 space-y-2">
+                <div className="space-y-1">
+                  <p>Mbale, Eastern Uganda · P.O. Box 530</p>
+                  <p className="font-mono">{primaryPhone.display}</p>
+                  <p>{COMPANY_DETAILS.emails[0]}</p>
+                </div>
+                <div className="flex items-center gap-3 pt-1">
+                  {COMPANY_DETAILS.socialMedia.map((social) => (
+                    <a
+                      key={social.id}
+                      href={social.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-stone-200/80 hover:bg-[#166534] text-stone-700 hover:text-white transition-colors text-[11px] font-medium"
+                    >
+                      <SocialBrandIcon id={social.id} className="w-4 h-4 shrink-0" />
+                      <span>{social.name}</span>
+                    </a>
+                  ))}
+                </div>
               </div>
             </div>
           </div>

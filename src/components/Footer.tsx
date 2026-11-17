@@ -1,6 +1,7 @@
 import React from 'react';
 import { Mail, Phone, MapPin, Download, Heart, ArrowUpRight, Compass, ShieldCheck, Award } from 'lucide-react';
 import { COMPANY_DETAILS, TOURISM_PILLARS } from '../data/companyData';
+import { SocialBrandIcon } from './SocialIcons';
 
 interface FooterProps {
   onNavigate: (path: string) => void;
@@ -52,6 +53,28 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                     </div>
                     <span className="text-[10px] font-mono font-bold text-stone-300">{c.acronym}</span>
                   </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Social Media Channels */}
+            <div className="pt-1">
+              <span className="text-[10px] font-bold uppercase tracking-wider text-emerald-400 block mb-2">
+                Connect With Us:
+              </span>
+              <div className="flex flex-wrap items-center gap-2">
+                {COMPANY_DETAILS.socialMedia.map((social) => (
+                  <a
+                    key={social.id}
+                    href={social.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title={`${social.name}: ${social.handle}`}
+                    className="inline-flex items-center gap-1.5 px-2.5 py-1.5 rounded-md bg-stone-900 border border-stone-800 hover:border-emerald-500/60 hover:bg-stone-800 text-stone-200 hover:text-white transition-colors text-xs"
+                  >
+                    <SocialBrandIcon id={social.id} className="w-4 h-4 shrink-0" />
+                    <span className="font-medium">{social.id === 'instagram' ? social.handle : social.name}</span>
+                  </a>
                 ))}
               </div>
             </div>

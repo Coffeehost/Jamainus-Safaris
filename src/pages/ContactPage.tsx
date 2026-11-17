@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { Breadcrumbs } from '../components/Breadcrumbs';
 import { COMPANY_DETAILS } from '../data/companyData';
-import { Mail, Phone, MapPin, Send, MessageCircle, Clock, CheckCircle2, ShieldCheck } from 'lucide-react';
+import { Mail, Phone, MapPin, Send, MessageCircle, Clock, CheckCircle2, ShieldCheck, ExternalLink } from 'lucide-react';
+import { SocialBrandIcon } from '../components/SocialIcons';
 
 interface ContactPageProps {
   onNavigate: (path: string) => void;
@@ -137,6 +138,33 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate }) => {
                   <MessageCircle className="w-4 h-4" />
                   <span>Chat on WhatsApp Directly</span>
                 </a>
+              </div>
+
+              {/* Official Social Media Channels */}
+              <div className="pt-4 border-t border-stone-800 space-y-2.5">
+                <strong className="text-white text-xs block uppercase tracking-wider">
+                  Follow Our Social Channels
+                </strong>
+                <div className="grid grid-cols-1 gap-2">
+                  {COMPANY_DETAILS.socialMedia.map((social) => (
+                    <a
+                      key={social.id}
+                      href={social.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center justify-between px-3.5 py-2.5 rounded-lg bg-stone-900/90 hover:bg-stone-800 border border-stone-800 hover:border-amber-500/50 transition-all group"
+                    >
+                      <div className="flex items-center gap-2.5">
+                        <SocialBrandIcon id={social.id} className="w-5 h-5 shrink-0" />
+                        <div className="text-xs leading-tight">
+                          <span className="font-semibold text-white block">{social.name}</span>
+                          <span className="text-[11px] text-stone-400">{social.handle}</span>
+                        </div>
+                      </div>
+                      <ExternalLink className="w-3.5 h-3.5 text-stone-500 group-hover:text-amber-400 transition-colors shrink-0" />
+                    </a>
+                  ))}
+                </div>
               </div>
             </div>
 
