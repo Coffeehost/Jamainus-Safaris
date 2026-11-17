@@ -73,7 +73,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                     className="inline-flex items-center gap-1.5 px-2.5 py-1.5 rounded-md bg-stone-900 border border-stone-800 hover:border-emerald-500/60 hover:bg-stone-800 text-stone-200 hover:text-white transition-colors text-xs"
                   >
                     <SocialBrandIcon id={social.id} className="w-4 h-4 shrink-0" />
-                    <span className="font-medium">{social.id === 'instagram' ? social.handle : social.name}</span>
+                    <span className="font-medium">{social.name}</span>
                   </a>
                 ))}
               </div>
