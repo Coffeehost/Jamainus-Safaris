@@ -55,6 +55,14 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                   </div>
                 ))}
               </div>
+              <div className="mt-2.5 text-[11px] text-stone-400 space-y-0.5 font-mono tabular-nums">
+                <div>
+                  UTB Reg: <span className="text-emerald-300">{COMPANY_DETAILS.registrations.utbRegistration}</span>
+                </div>
+                <div>
+                  URSB No: <span className="text-stone-200">{COMPANY_DETAILS.registrations.ursbNumber}</span>
+                </div>
+              </div>
             </div>
 
             {/* Social Media Channels */}
@@ -88,6 +96,9 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
               <p className="text-xs text-stone-400 leading-normal">
                 Slogan: <em>A Chance to Make a Difference</em>. Focusing on disability inclusion, community welfare, and habitat conservation.
               </p>
+              <div className="text-[11px] font-mono text-stone-300 tabular-nums">
+                Charity URSB: <span className="text-amber-300">{COMPANY_DETAILS.registrations.charityUrsbNumber}</span>
+              </div>
               <button
                 onClick={() => onNavigate('/charity')}
                 className="text-xs font-medium text-emerald-400 hover:text-emerald-300 flex items-center gap-1 transition-colors cursor-pointer"

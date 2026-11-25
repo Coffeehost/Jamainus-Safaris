@@ -125,6 +125,22 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate }) => {
                     <span className="text-stone-400">24/7 On-Safari Emergency Support for Guests</span>
                   </div>
                 </div>
+
+                {/* Official Registration Documents */}
+                <div className="flex items-start gap-3">
+                  <ShieldCheck className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
+                  <div className="space-y-0.5">
+                    <strong className="text-white block">Tourism Documents &amp; Registration:</strong>
+                    <div className="font-mono text-[11px] tabular-nums">
+                      <span className="text-stone-400">UTB Reg. No:</span>{' '}
+                      <span className="text-emerald-300">{COMPANY_DETAILS.registrations.utbRegistration}</span>
+                    </div>
+                    <div className="font-mono text-[11px] tabular-nums">
+                      <span className="text-stone-400">URSB No:</span>{' '}
+                      <span className="text-stone-200">{COMPANY_DETAILS.registrations.ursbNumber}</span>
+                    </div>
+                  </div>
+                </div>
               </div>
 
               {/* Direct WhatsApp Action */}
@@ -176,6 +192,9 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate }) => {
               <p className="leading-relaxed">
                 For community partnership proposals, NGO inquiries, or disability inclusion support, please state "Charity Inquiry" in your message.
               </p>
+              <div className="pt-1 font-mono text-[11px] text-amber-900 font-semibold tabular-nums">
+                Charity URSB No: {COMPANY_DETAILS.registrations.charityUrsbNumber}
+              </div>
             </div>
           </div>
 

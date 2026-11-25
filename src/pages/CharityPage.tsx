@@ -46,6 +46,26 @@ export const CharityPage: React.FC<CharityPageProps> = ({ onNavigate }) => {
           <p className="text-sm sm:text-base text-stone-300 leading-relaxed max-w-3xl">
             While JAMAINUS SAFARIS focuses on tourism and travel experiences, JAMAINUS CHARITY FOUNDATION LTD represents the charitable and community-development dimension of that wider vision. Its purpose is to help create opportunities for vulnerable people, promote the inclusion and empowerment of persons with disabilities, support community development, protect nature, and encourage the preservation of local history and cultural heritage.
           </p>
+
+          <div className="pt-2 flex flex-wrap items-center gap-3 text-xs">
+            <div className="inline-flex items-center gap-2 px-3.5 py-2 rounded-lg bg-stone-900 border border-stone-700 text-stone-200">
+              <ShieldCheck className="w-4 h-4 text-emerald-400 shrink-0" />
+              <span>
+                Charity URSB Registration No:{' '}
+                <strong className="font-mono text-white tabular-nums">
+                  {COMPANY_DETAILS.registrations.charityUrsbNumber}
+                </strong>
+              </span>
+            </div>
+            <div className="inline-flex items-center gap-2 px-3.5 py-2 rounded-lg bg-stone-900 border border-stone-700 text-stone-300">
+              <span>
+                Tourism Partner UTB Reg:{' '}
+                <strong className="font-mono text-emerald-300 tabular-nums">
+                  {COMPANY_DETAILS.registrations.utbRegistration}
+                </strong>
+              </span>
+            </div>
+          </div>
         </div>
       </div>
 

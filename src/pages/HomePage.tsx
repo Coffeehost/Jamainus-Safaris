@@ -304,6 +304,33 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onOpenInquiry })
               </div>
             ))}
           </div>
+
+          <div className="mt-5 pt-4 border-t border-stone-200/80 grid grid-cols-1 sm:grid-cols-3 gap-3 text-center sm:text-left">
+            <div className="px-3.5 py-2.5 rounded-lg bg-emerald-50/70 border border-emerald-200/70 flex flex-col">
+              <span className="text-[10px] font-bold uppercase tracking-wider text-stone-500">
+                Tourism Registration No. (UTB)
+              </span>
+              <span className="font-mono text-xs font-bold text-[#166534] tabular-nums mt-0.5">
+                {COMPANY_DETAILS.registrations.utbRegistration}
+              </span>
+            </div>
+            <div className="px-3.5 py-2.5 rounded-lg bg-stone-50 border border-stone-200/80 flex flex-col">
+              <span className="text-[10px] font-bold uppercase tracking-wider text-stone-500">
+                Company URSB Number
+              </span>
+              <span className="font-mono text-xs font-bold text-stone-900 tabular-nums mt-0.5">
+                {COMPANY_DETAILS.registrations.ursbNumber}
+              </span>
+            </div>
+            <div className="px-3.5 py-2.5 rounded-lg bg-stone-50 border border-stone-200/80 flex flex-col">
+              <span className="text-[10px] font-bold uppercase tracking-wider text-stone-500">
+                Charity URSB Number
+              </span>
+              <span className="font-mono text-xs font-bold text-stone-900 tabular-nums mt-0.5">
+                {COMPANY_DETAILS.registrations.charityUrsbNumber}
+              </span>
+            </div>
+          </div>
         </div>
       </section>
 

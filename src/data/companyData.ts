@@ -41,6 +41,11 @@ export const COMPANY_DETAILS = {
       url: 'https://www.instagram.com/jamai.nus/',
     },
   ],
+  registrations: {
+    utbRegistration: 'UTB/RTT/TT/2026/102210',
+    ursbNumber: '80030897601454',
+    charityUrsbNumber: '80034134749894',
+  },
   ecotourismStatement: 'Ecotourism allows you to connect with nature, learn about environmental issues, and contribute to the protection of biodiversity. By participating in ecotourism activities, individuals can make a positive impact on the environment while creating unforgettable memories and experiences.',
   certifications: [
     {
@@ -190,6 +195,7 @@ export const COMPANY_DETAILS = {
   charityArm: {
     name: 'JAMAINUS CHARITY FOUNDATION LTD',
     slogan: 'A Chance to Make a Difference',
+    ursbNumber: '80034134749894',
     description: 'The NGO and charitable community-development dimension of the wider Jamainus vision, dedicated to disability inclusion, vulnerable communities, and grassroots preservation.'
   }
 };

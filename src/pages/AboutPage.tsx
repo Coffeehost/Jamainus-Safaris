@@ -215,6 +215,53 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
               </div>
             ))}
           </div>
+
+          {/* Official Tourism & Corporate Registration Documents */}
+          <div className="pt-4 border-t border-emerald-200/70">
+            <div className="flex items-center gap-2 mb-3">
+              <FileText className="w-4 h-4 text-[#166534]" />
+              <span className="text-xs font-bold uppercase tracking-wider text-[#166534]">
+                Official Tourism Documents &amp; Statutory Registration Numbers
+              </span>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
+              <div className="bg-white rounded-xl p-4 border border-emerald-200/80 shadow-2xs flex flex-col justify-between space-y-1">
+                <span className="text-[11px] font-semibold text-stone-500 uppercase tracking-wider">
+                  Uganda Tourism Board (UTB) Reg. No.
+                </span>
+                <span className="font-mono text-sm font-bold text-[#166534] tabular-nums break-all">
+                  {COMPANY_DETAILS.registrations.utbRegistration}
+                </span>
+                <span className="text-[10px] text-stone-500">
+                  Official Licensed Tourism &amp; Tour Operator Document
+                </span>
+              </div>
+
+              <div className="bg-white rounded-xl p-4 border border-emerald-200/80 shadow-2xs flex flex-col justify-between space-y-1">
+                <span className="text-[11px] font-semibold text-stone-500 uppercase tracking-wider">
+                  Company URSB Registration No.
+                </span>
+                <span className="font-mono text-sm font-bold text-stone-900 tabular-nums">
+                  {COMPANY_DETAILS.registrations.ursbNumber}
+                </span>
+                <span className="text-[10px] text-stone-500">
+                  Uganda Registration Services Bureau (URSB)
+                </span>
+              </div>
+
+              <div className="bg-white rounded-xl p-4 border border-emerald-200/80 shadow-2xs flex flex-col justify-between space-y-1">
+                <span className="text-[11px] font-semibold text-stone-500 uppercase tracking-wider">
+                  Charity Foundation URSB No.
+                </span>
+                <span className="font-mono text-sm font-bold text-stone-900 tabular-nums">
+                  {COMPANY_DETAILS.registrations.charityUrsbNumber}
+                </span>
+                <span className="text-[10px] text-stone-500">
+                  Jamainus Charity Foundation Ltd (Registered NGO Arm)
+                </span>
+              </div>
+            </div>
+          </div>
         </div>
 
         {/* Ecotourism Statement */}
